@@ -3930,54 +3930,6 @@
 				)
 			)
 			(symbol "TPS75533KTTRG3_0_1"
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 7.62 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 24.13 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 24.13 0) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 24.13 -10.16) (xy 24.13 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin input line
 					(at 0 -2.54 0)
 					(length 7.62)
@@ -4070,6 +4022,18 @@
 				)
 			)
 			(symbol "TPS75533KTTRG3_1_1"
+				(rectangle
+					(start 7.62 0)
+					(end 24.13 -10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 255 255 194 1)
+					)
+				)
 				(pin output line
 					(at 31.75 -2.54 180)
 					(length 7.62)
@@ -4555,6 +4519,19 @@
 			)
 		)
 		(uuid "d3031ed8-faa6-47c0-820a-97c1ad2988c9")
+	)
+	(text "Confirm ESR\nof capacitor!\nMust be above \n500m"
+		(exclude_from_sim no)
+		(at 226.822 160.274 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.127)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d355e171-3c82-41d3-a58c-cb48afbce835")
 	)
 	(text "Battery Charger"
 		(exclude_from_sim no)
@@ -5050,16 +5027,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 167.64) (xy 163.83 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5af90105-4507-4138-bb46-ed49f3f2019e")
-	)
-	(wire
-		(pts
 			(xy 247.65 146.05) (xy 248.92 146.05)
 		)
 		(stroke
@@ -5400,6 +5367,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 166.37) (xy 163.83 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b698d0f6-8c60-4223-aafb-1ad29c098fed")
+	)
+	(wire
+		(pts
 			(xy 119.38 166.37) (xy 119.38 168.91)
 		)
 		(stroke
@@ -5430,7 +5407,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 175.26) (xy 163.83 176.53)
+			(xy 163.83 173.99) (xy 163.83 176.53)
 		)
 		(stroke
 			(width 0)
@@ -6473,75 +6450,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 163.83 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "097013dc-35dc-4d66-89b7-f59a1e67f1f8")
-		(property "Reference" "C8"
-			(at 158.496 170.688 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 156.464 172.974 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 164.7952 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 163.83 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 163.83 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c7055449-70bd-4d14-820b-bbec3e245418")
-		)
-		(pin "2"
-			(uuid "f576cf79-221d-4468-9662-554bf5615c7e")
-		)
-		(instances
-			(project "esp32_test"
-				(path "/4bd92664-563a-4440-acf2-e22b0a15db62"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 146.05 146.05 0)
 		(unit 1)
@@ -7404,6 +7312,146 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 163.83 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "527f0820-20d5-4c8b-9c6a-28f5dad799f8")
+		(property "Reference" "C6"
+			(at 166.37 169.7481 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 166.37 172.2881 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 163.83 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "49582ce2-2a92-4b38-b796-54a36d4b8c15")
+		)
+		(pin "1"
+			(uuid "a84bb275-3a34-46a4-a96d-9cf171295413")
+		)
+		(instances
+			(project "esp32_test"
+				(path "/4bd92664-563a-4440-acf2-e22b0a15db62"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 158.75 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57438fbe-afd8-4a79-8c92-11af04efb9ab")
+		(property "Reference" "C11"
+			(at 161.29 188.7981 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 161.29 191.3381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 158.75 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c788c532-0516-4925-ae4f-f3864005525e")
+		)
+		(pin "1"
+			(uuid "93056c2f-87e6-4a0d-bc57-fd3087179628")
+		)
+		(instances
+			(project ""
+				(path "/4bd92664-563a-4440-acf2-e22b0a15db62"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 17.78 139.7 270)
 		(unit 1)
@@ -7595,7 +7643,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "JST-PH"
+		(property "Value" "JST-VH"
 			(at 22.86 123.444 90)
 			(effects
 				(font
@@ -8108,76 +8156,6 @@
 			(project "esp32_test"
 				(path "/4bd92664-563a-4440-acf2-e22b0a15db62"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 158.75 190.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6b043de7-14fa-4396-8211-fb444b46442c")
-		(property "Reference" "C6"
-			(at 161.29 189.2362 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 161.29 191.7762 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 158.75 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3f92c90e-1d4c-4dd1-9acb-207398e36d98")
-		)
-		(pin "2"
-			(uuid "3c7d679c-913a-4c27-bf9b-1e5dc8afab87")
-		)
-		(instances
-			(project "esp32_test"
-				(path "/4bd92664-563a-4440-acf2-e22b0a15db62"
-					(reference "C6")
 					(unit 1)
 				)
 			)
