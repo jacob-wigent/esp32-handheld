@@ -4544,6 +4544,16 @@
 		)
 		(uuid "78c5eee2-3351-421d-9289-4cb6725dfc92")
 	)
+	(text "Test"
+		(exclude_from_sim no)
+		(at 75.438 80.772 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "99ff9e6f-686e-448e-8017-0cf8466e75c1")
+	)
 	(text "Tech Buttons"
 		(exclude_from_sim no)
 		(at 136.906 115.824 0)
