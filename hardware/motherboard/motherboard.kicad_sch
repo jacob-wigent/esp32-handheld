@@ -4546,7 +4546,7 @@
 	)
 	(text "RTC GPIO to wake\ndevice from deep sleep"
 		(exclude_from_sim no)
-		(at 199.39 45.974 0)
+		(at 199.39 73.66 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -6283,7 +6283,7 @@
 	)
 	(global_label "Start"
 		(shape input)
-		(at 207.01 45.72 180)
+		(at 207.01 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6293,7 +6293,7 @@
 		)
 		(uuid "74b4ce83-f660-4d17-af69-b3f97de99b08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.4287 45.72 0)
+			(at 199.4287 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6371,22 +6371,22 @@
 	)
 	(global_label "ACC2"
 		(shape input)
-		(at 237.49 60.96 0)
+		(at 207.01 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "88313a81-2666-493f-80e1-4b62a952a427")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.3133 60.96 0)
+			(at 199.1867 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6459,22 +6459,22 @@
 	)
 	(global_label "ACC1"
 		(shape input)
-		(at 237.49 58.42 0)
+		(at 207.01 50.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "9aeb57ba-be12-486e-af2c-feabb4c50eb6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.3133 58.42 0)
+			(at 199.1867 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6525,7 +6525,7 @@
 	)
 	(global_label "LED2"
 		(shape input)
-		(at 254 35.56 0)
+		(at 237.49 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6535,7 +6535,7 @@
 		)
 		(uuid "9f051548-0976-4c50-b6b6-62267d161841")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.6418 35.56 0)
+			(at 245.1318 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6547,7 +6547,7 @@
 	)
 	(global_label "LED1"
 		(shape input)
-		(at 254 33.02 0)
+		(at 237.49 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6557,7 +6557,7 @@
 		)
 		(uuid "9f0ec7e1-5989-4495-91db-7d0ec6183cc5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.6418 33.02 0)
+			(at 245.1318 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6569,22 +6569,22 @@
 	)
 	(global_label "Select"
 		(shape input)
-		(at 254 43.18 0)
+		(at 207.01 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "a0b4794f-b5cd-466d-9ce8-a4c6295bec07")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 262.8514 43.18 0)
+			(at 198.1586 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6651,6 +6651,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ChgStat"
+		(shape input)
+		(at 207.01 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c214ae8c-b800-4e1f-bc9c-730ecc3d0147")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 196.6469 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
