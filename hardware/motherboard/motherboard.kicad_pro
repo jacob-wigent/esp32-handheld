@@ -250,7 +250,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "esp32_test.kicad_pro",
+    "filename": "motherboard.kicad_pro",
     "version": 3
   },
   "net_settings": {
