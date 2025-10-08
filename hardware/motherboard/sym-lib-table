@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "esp32_handheld")(type "KiCad")(uri "C:/Users/Jacob/Engineering/Electronics/OPS 2/esp32-handheld/libraries/esp32_handheld.kicad_sym")(options "")(descr ""))
+)

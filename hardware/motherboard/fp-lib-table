@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "libraries")(type "KiCad")(uri "C:/Users/Jacob/Engineering/Electronics/OPS 2/esp32-handheld/libraries.pretty")(options "")(descr ""))
+  (lib (name "esp32_handheld")(type "KiCad")(uri "C:/Users/Jacob/Engineering/Electronics/OPS 2/esp32-handheld/libraries/esp32_handheld.pretty")(options "")(descr ""))
+)
