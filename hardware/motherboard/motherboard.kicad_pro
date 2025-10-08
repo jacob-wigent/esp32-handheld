@@ -246,8 +246,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "esp32_handheld"
+    ],
+    "pinned_symbol_libs": [
+      "esp32_handheld"
+    ]
   },
   "meta": {
     "filename": "motherboard.kicad_pro",
