@@ -2,27 +2,52 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "Low_Profile_Joystick"
+	(symbol "TSM7P06CP_ROG"
+		(pin_names
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "JY"
-			(at 4.572 10.414 0)
+		(property "Reference" "Q"
+			(at 11.43 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "TSM7P06CP_ROG"
+			(at 11.43 1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TSM7P06CPROG"
+			(at 11.43 -98.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.taiwansemi.com/assets/uploads/datasheet/TSM7P06_B1802.pdf"
+			(at 11.43 -198.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MOSFET -60V, -7A, Single P-Channel Power MOSFET"
 			(at 0 0 0)
 			(effects
 				(font
@@ -31,30 +56,63 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
+		(property "Height" "2.6"
+			(at 11.43 -398.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Mouser Part Number" "821-TSM7P06CPROG"
+			(at 11.43 -498.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(symbol "Low_Profile_Joystick_0_1"
-			(rectangle
-				(start -8.89 8.89)
-				(end 8.89 -8.89)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Taiwan-Semiconductor/TSM7P06CP-ROG?qs=5aG0NVq1C4wCVhoUvmpgwg%3D%3D"
+			(at 11.43 -598.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Taiwan Semiconductor"
+			(at 11.43 -698.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TSM7P06CP ROG"
+			(at 11.43 -798.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(symbol "TSM7P06CP_ROG_1_1"
+			(polyline
+				(pts
+					(xy 2.54 0) (xy 5.08 0)
+				)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -63,10 +121,10 @@
 			)
 			(polyline
 				(pts
-					(xy -3.81 0) (xy 3.81 0)
+					(xy 5.08 5.08) (xy 5.08 0)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -75,10 +133,10 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -3.81 0) (xy -2.54 -1.27)
+					(xy 5.842 5.588) (xy 5.842 4.572)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -87,10 +145,10 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 2.54) (xy 0 3.81) (xy 1.27 2.54)
+					(xy 5.842 2.032) (xy 5.842 3.048)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -99,10 +157,10 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 -2.54) (xy 0 -3.81) (xy 1.27 -2.54)
+					(xy 5.842 0) (xy 7.62 0)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -111,22 +169,10 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 -3.81)
+					(xy 5.842 -0.508) (xy 5.842 0.508)
 				)
 				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -134,8 +180,238 @@
 				)
 			)
 			(circle
-				(center 0 0)
-				(radius 5.08)
+				(center 6.35 2.54)
+				(radius 3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 5.08) (xy 5.842 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 5.08) (xy 7.62 7.62)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 2.54) (xy 5.842 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 2.54) (xy 7.62 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 2.54) (xy 6.604 3.048) (xy 6.604 2.032) (xy 7.62 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 2.54)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 10.16 270)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -5.08 90)
+				(length 2.54)
+				(name "S"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "VS-6CWQ03FN-M3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 5.08 4.826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "VS-6CWQ03FN-M3"
+			(at 5.08 3.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "VS15AWL06FNTRM3"
+			(at 19.05 -94.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/93315/6cwq03fn.pdf"
+			(at 19.05 -194.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky Diodes & Rectifiers Schottky - D-PAK-e3"
+			(at 9.144 -9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2"
+			(at 19.05 -394.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "78-VS-6CWQ03FN-M3"
+			(at 19.05 -494.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VS-6CWQ03FN-M3?qs=u%252Bh7cTrMUz%2F%252BX%252BSKWd6XYw%3D%3D"
+			(at 19.05 -594.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 19.05 -694.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "VS-6CWQ03FN-M3"
+			(at 19.05 -794.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(symbol "VS-6CWQ03FN-M3_0_1"
+			(rectangle
+				(start 5.08 1.27)
+				(end 11.43 -3.81)
 				(stroke
 					(width 0)
 					(type default)
@@ -146,7 +422,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -8.89) (xy 0 -7.62)
+					(xy 5.08 0) (xy 5.08 0) (xy 6.35 -1.27) (xy 7.62 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -158,7 +434,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 1.27) (xy 3.81 0) (xy 2.54 -1.27)
+					(xy 5.08 -2.54) (xy 5.08 -2.54) (xy 6.35 -1.27) (xy 7.62 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -170,10 +446,22 @@
 			)
 			(polyline
 				(pts
-					(xy 8.89 0) (xy 7.62 0)
+					(xy 7.62 0) (xy 7.62 -2.54) (xy 10.16 -1.27) (xy 7.62 0) (xy 7.62 -1.27) (xy 7.62 -2.54)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 0) (xy 10.16 -2.54)
+				)
+				(stroke
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -181,67 +469,18 @@
 				)
 			)
 		)
-		(symbol "Low_Profile_Joystick_1_1"
-			(polyline
-				(pts
-					(xy -3.81 -6.35) (xy -6.35 -6.35) (xy -6.35 6.35) (xy 8.89 6.35) (xy 6.35 6.35) (xy 6.35 3.81)
-				)
-				(stroke
-					(width 0.0762)
-					(type dash)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 -6.35) (xy 2.54 -7.62) (xy 1.27 -6.35) (xy 0 -7.62) (xy -1.27 -6.35) (xy -2.54 -7.62)
-					(xy -3.81 -6.35)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 6.35 3.81) (xy 7.62 2.54) (xy 6.35 1.27) (xy 7.62 0) (xy 6.35 -1.27) (xy 7.62 -2.54) (xy 6.35 -3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 6.35 -3.81) (xy 6.35 -6.35) (xy 3.81 -6.35) (xy 8.89 -6.35)
-				)
-				(stroke
-					(width 0.0762)
-					(type dash)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin input line
-				(at 0 -10.16 90)
-				(length 1.016)
-				(name "XOUT"
+		(symbol "VS-6CWQ03FN-M3_1_1"
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -249,35 +488,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 10.16 6.35 180)
-				(length 1.016)
-				(name "VCC"
+			(pin passive line
+				(at 0 -2.54 0)
+				(length 5.08)
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 0 180)
-				(length 1.016)
-				(name "YOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -285,17 +506,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 10.16 -6.35 180)
-				(length 1.016)
-				(name "GND"
+			(pin passive line
+				(at 15.24 -1.27 180)
+				(length 5.08)
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
