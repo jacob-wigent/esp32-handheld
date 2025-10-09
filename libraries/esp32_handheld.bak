@@ -2,49 +2,50 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "FDC608PZ"
+	(symbol "TPS75533KTTRG3"
+		(pin_names
+			(offset 0.254)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "IC"
-			(at 21.59 7.62 0)
+		(property "Reference" "U"
+			(at 16.002 4.826 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
-				(justify left top)
 			)
 		)
-		(property "Value" "FDC608PZ"
-			(at 21.59 5.08 0)
+		(property "Value" "TPS75533KTTRG3"
+			(at 16.002 2.286 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
-				(justify left top)
 			)
 		)
-		(property "Footprint" "SOT95P275X110-6N"
-			(at 21.59 -94.92 0)
+		(property "Footprint" "KTT5_6P22X6P86"
+			(at -2.794 13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDC608PZ-D.PDF"
-			(at 21.59 -194.92 0)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps755"
+			(at 3.556 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "High performance trench technology for extremely low RDS(on); -5.8A, -20V, RDS(on) = 30m @ VGS = -4.5V RDS(on) = 43m @ VGS = -2.5V ; SuperSOT C6 package: small footprint (72% smaller than standard SOC8) low profile (1mm thick); Low gate charge"
+		(property "Description" ""
 			(at 0 0 0)
 			(effects
 				(font
@@ -53,72 +54,55 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "1.1"
-			(at 21.59 -394.92 0)
+		(property "ki_locked" ""
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
-				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "512-FDC608PZ"
-			(at 21.59 -494.92 0)
+		(property "ki_keywords" "TPS75533KTTRG3"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDC608PZ?qs=cunaKtMgX5PRvFzPztrrbg%3D%3D"
-			(at 21.59 -594.92 0)
+		(property "ki_fp_filters" "KTT5_6P22X6P86 KTT5_6P22X6P86-M KTT5_6P22X6P86-L"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 21.59 -694.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+		(symbol "TPS75533KTTRG3_0_1"
+			(pin input line
+				(at 0 -2.54 0)
+				(length 7.62)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "FDC608PZ"
-			(at 21.59 -794.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(symbol "FDC608PZ_1_1"
-			(rectangle
-				(start 5.08 2.54)
-				(end 20.32 -7.62)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
-			(pin passive line
-				(at 0 0 0)
-				(length 5.08)
-				(name "D_1"
+			(pin unspecified line
+				(at 0 -7.62 0)
+				(length 7.62)
+				(name "*EN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -133,325 +117,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -2.54 0)
-				(length 5.08)
-				(name "D_2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -5.08 0)
-				(length 5.08)
-				(name "G"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 25.4 0 180)
-				(length 5.08)
-				(name "D_4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 25.4 -2.54 180)
-				(length 5.08)
-				(name "D_3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 25.4 -5.08 180)
-				(length 5.08)
-				(name "S"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "NE555DR"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "IC"
-			(at 26.67 15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "NE555DR"
-			(at 26.67 12.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Footprint" "SOIC127P600X175-8N"
-			(at 26.67 -87.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https: //www.ti.com/lit/gpn/ne555"
-			(at 26.67 -187.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Precision Timer"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.75"
-			(at 26.67 -387.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 26.67 -487.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NE555DR"
-			(at 26.67 -587.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "595-NE555DR"
-			(at 26.67 -687.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/NE555DR?qs=gb35HGp1gQJ5U8ZthvvoVQ%3D%3D"
-			(at 26.67 -787.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" "NE555DR"
-			(at 26.67 -887.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/ne555dr/texas-instruments?region=nac"
-			(at 26.67 -987.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(symbol "NE555DR_1_1"
-			(rectangle
-				(start 5.08 10.16)
-				(end 25.4 -20.32)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(pin passive line
-				(at 0 0 0)
-				(length 5.08)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -2.54 0)
-				(length 5.08)
-				(name "DISCH"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -7.62 0)
-				(length 5.08)
-				(name "THRES"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -10.16 0)
-				(length 5.08)
-				(name "TRIG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 15.24 270)
-				(length 5.08)
-				(name "CONT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 -25.4 90)
-				(length 5.08)
+			(pin power_in line
+				(at 13.97 -12.7 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -459,7 +127,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -467,17 +135,17 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 17.78 15.24 270)
-				(length 5.08)
-				(name "VCC"
+			(pin unspecified line
+				(at 31.75 -5.08 180)
+				(length 7.62)
+				(name "FB/*PG"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -485,9 +153,41 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 30.48 0 180)
-				(length 5.08)
+			(pin unspecified line
+				(at 31.75 -7.62 180)
+				(length 7.62)
+				(name "EPAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TPS75533KTTRG3_1_1"
+			(rectangle
+				(start 7.62 0)
+				(end 24.13 -10.16)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type color)
+					(color 255 255 194 1)
+				)
+			)
+			(pin output line
+				(at 31.75 -2.54 180)
+				(length 7.62)
 				(name "OUT"
 					(effects
 						(font
@@ -495,7 +195,7 @@
 						)
 					)
 				)
-				(number "3"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -816,7 +516,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "D"
-			(at 6.096 5.08 0)
+			(at 5.08 4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -825,7 +525,7 @@
 			)
 		)
 		(property "Value" "VS-6CWQ03FN-M3"
-			(at 6.096 2.54 0)
+			(at 5.08 3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -913,6 +613,17 @@
 			)
 		)
 		(symbol "VS-6CWQ03FN-M3_0_1"
+			(rectangle
+				(start 5.08 1.27)
+				(end 11.43 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
 					(xy 5.08 0) (xy 5.08 0) (xy 6.35 -1.27) (xy 7.62 -1.27)
