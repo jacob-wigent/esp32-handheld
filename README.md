@@ -3,3 +3,6 @@ Handheld game console powered by an ESP32-S3, featuring a custom LED matrix disp
 
 ESP32-S3
 2020 NeoPixels (WS2812B)
+
+10/10
+- added through-hole power JST connector on display board
