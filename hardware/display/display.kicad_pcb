@@ -109114,7 +109114,7 @@
 		(descr "JST PH series connector, S8B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST PH horizontal")
 		(property "Reference" "J2"
-			(at 7 2.55 90)
+			(at 17.75 -4.675 0)
 			(layer "B.SilkS")
 			(uuid "2d22d515-0e03-424a-b586-ba50ab4ed8c7")
 			(effects
