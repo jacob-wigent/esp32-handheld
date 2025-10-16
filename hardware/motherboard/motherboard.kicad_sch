@@ -4978,7 +4978,7 @@
 		)
 		(uuid "cfabd44b-4e4a-48d8-b463-2feba8630552")
 	)
-	(text "Charge Status\nIMU (I2C: SDA/SCL)"
+	(text "IMU (I2C: SDA/SCL)"
 		(exclude_from_sim no)
 		(at 254.508 65.278 0)
 		(effects
