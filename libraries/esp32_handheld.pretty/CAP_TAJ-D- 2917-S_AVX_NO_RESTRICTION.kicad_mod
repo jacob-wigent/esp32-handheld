@@ -18,7 +18,7 @@
 		)
 	)
 	(property "Value" "CAP_TAJ-D-_2917-S_AVX"
-		(at 0 0 0)
+		(at 0 -3.75 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "acd6f3ce-5ba6-4f61-baca-da46983c1ee1")
@@ -83,6 +83,26 @@
 		)
 		(layer "F.SilkS")
 		(uuid "c8b3e300-0b9e-482d-bf8f-0565a757a492")
+	)
+	(fp_line
+		(start -3.25 -1.75)
+		(end -2 -1.75)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "66d96468-f901-4d07-a40f-95329d668e2e")
+	)
+	(fp_line
+		(start -3.25 1.75)
+		(end -2 1.75)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a35ab978-99f9-4ee4-ad2d-ec099144da70")
 	)
 	(fp_line
 		(start 3.8735 -2.3749)
