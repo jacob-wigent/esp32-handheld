@@ -4886,16 +4886,6 @@
 		)
 		(uuid "5e96a0d5-94cb-4f46-9a4b-3904a8e6da1e")
 	)
-	(text "TODO:\nSelect Battery Charger IC"
-		(exclude_from_sim no)
-		(at 100.584 130.048 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5f4e5b52-2c48-45aa-af81-8bcd42615bf7")
-	)
 	(text "Voltage Divider"
 		(exclude_from_sim no)
 		(at 65.786 115.824 0)
@@ -4931,6 +4921,16 @@
 			)
 		)
 		(uuid "78c5eee2-3351-421d-9289-4cb6725dfc92")
+	)
+	(text "Use integrated charger \non devboard \n\n(500mA charging limit)"
+		(exclude_from_sim no)
+		(at 101.6 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "82f6c425-c254-414d-a127-acfebfcd74cb")
 	)
 	(text "IMU"
 		(exclude_from_sim no)
@@ -11450,7 +11450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
 			(at 50.8 177.8 0)
 			(effects
 				(font
