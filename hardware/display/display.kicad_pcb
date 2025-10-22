@@ -113992,7 +113992,7 @@
 			(uuid "df3fd831-6f8e-4ec7-9088-86490658b694")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal.step"
+		(model "${OPS2_HANDHELD}/esp_32_handheld.3dshapes/JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal.step"
 			(offset
 				(xyz 2 0 0)
 			)

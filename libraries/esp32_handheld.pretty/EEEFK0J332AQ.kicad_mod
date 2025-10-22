@@ -289,7 +289,7 @@
 		(uuid "7634def3-c04a-473f-a7d2-9adc5bdbdeeb")
 	)
 	(embedded_fonts no)
-	(model "C:\\Users\\Jacob\\Documents\\KiCad\\9.0\\library_loader\\SamacSys_Parts.3dshapes\\EEV-FK1E102Q.stp"
+	(model "${OPS2_HANDHELD}/esp_32_handheld.3dshapes/EEV-FK1E102Q.stp"
 		(offset
 			(xyz 0 0 0)
 		)
