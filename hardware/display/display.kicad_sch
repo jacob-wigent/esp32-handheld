@@ -1405,6 +1405,30 @@
 		)
 		(uuid 38d7154d-cce3-4da5-ac21-78051deb7a40)
 	)
+	(rectangle
+		(start 342.265 209.55)
+		(end 457.835 241.3)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3c88e136-33ed-436a-8dea-5efe884aed17)
+	)
+	(text "Bulk Capacitors"
+		(exclude_from_sim no)
+		(at 398.018 213.36 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "1ff1be73-bbe3-43c5-b4cd-5a52906d185a")
+	)
 	(text "Connectors"
 		(exclude_from_sim no)
 		(at 498.602 212.344 0)
@@ -4209,75 +4233,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 340.36 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "055d6b0c-fd18-4208-8137-3d1b8bf1b40c")
-		(property "Reference" "C81"
-			(at 342.392 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 342.392 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 340.36 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 340.36 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4f3aa077-0dbf-4361-8f0a-1269bc18689b")
-		)
-		(pin "1"
-			(uuid "16f9523a-e55d-491c-9b94-072f012e59d1")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDD")
 		(at 615.95 68.58 0)
 		(unit 1)
@@ -5564,72 +5519,6 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 420.37 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "086151b4-24ea-4022-8894-8afcd436e6e3")
-		(property "Reference" "#PWR0737"
-			(at 420.37 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 420.37 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 420.37 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 420.37 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 420.37 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "204648ce-159f-4c87-8ca7-5610ecdf803b")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0737")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
 		(at 189.23 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5822,72 +5711,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0536")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 351.79 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09429b67-1379-4d8a-b12f-cd998f11762b")
-		(property "Reference" "#PWR0726"
-			(at 351.79 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 351.79 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 351.79 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 351.79 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 351.79 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ff5737e3-0653-4c5e-9482-7c26a87d0abc")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0726")
 					(unit 1)
 				)
 			)
@@ -7102,72 +6925,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 420.37 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c0e1a16-9ff9-4279-8619-17853bfbb405")
-		(property "Reference" "#PWR0738"
-			(at 420.37 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 420.37 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 420.37 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 420.37 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 420.37 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "576f991d-232f-4d39-a79a-463783d74043")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0738")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:WS2812B-2020")
 		(at 36.83 167.64 0)
 		(unit 1)
@@ -8213,6 +7970,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 443.23 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f16e26e-ebdb-4e54-a86f-b8a4113a5a92")
+		(property "Reference" "#PWR0746"
+			(at 443.23 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 443.23 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 443.23 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 443.23 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 443.23 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b1096c1-812b-4fe7-a9c0-e4849d203a36")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0746")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 219.71 114.3 0)
 		(unit 1)
@@ -9106,75 +8929,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 408.94 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1197b595-fef1-44c1-900f-bdffeaf03f3c")
-		(property "Reference" "C87"
-			(at 410.972 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 410.972 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 408.94 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 408.94 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 408.94 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b1011938-5572-4648-b709-e46ffc49a42d")
-		)
-		(pin "1"
-			(uuid "666c2673-0856-426b-87ed-ad1a27a8eef1")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C87")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:WS2812B-2020")
 		(at 448.31 190.5 0)
 		(unit 1)
@@ -9451,6 +9205,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 351.79 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12297e29-6c19-4ca3-a10f-7bdd93df6522")
+		(property "Reference" "#PWR0726"
+			(at 351.79 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 351.79 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 351.79 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5656bca-9ec6-4242-9c9a-41a2c07afca8")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0726")
 					(unit 1)
 				)
 			)
@@ -9787,72 +9607,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0694")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 351.79 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "131245d4-aaba-40b3-865b-524eb42b8beb")
-		(property "Reference" "#PWR0725"
-			(at 351.79 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 351.79 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 351.79 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 351.79 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 351.79 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "32cca1ab-d44e-4479-938c-ea213c717688")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0725")
 					(unit 1)
 				)
 			)
@@ -11099,72 +10853,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 431.8 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1859ec44-4553-48aa-b4d6-42142008728c")
-		(property "Reference" "#PWR0740"
-			(at 431.8 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 431.8 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 431.8 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 431.8 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 431.8 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a1033a4c-6037-46d4-80f3-0f871b49c256")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0740")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDD")
 		(at 387.35 182.88 0)
 		(unit 1)
@@ -11906,75 +11594,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 420.37 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a72fef4-db73-49b3-8bb3-8b40e33c985e")
-		(property "Reference" "C88"
-			(at 422.402 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 422.402 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 420.37 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 420.37 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 420.37 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a74ac1c9-5635-4caf-a1f7-f13070bb7e3e")
-		)
-		(pin "1"
-			(uuid "7482f9f1-afb8-4ed0-be38-2eb203b758aa")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C88")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:WS2812B-2020")
 		(at 158.75 167.64 0)
 		(unit 1)
@@ -12045,72 +11664,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D249")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 386.08 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a9b3acc-03e8-426e-8b4f-523806244ffb")
-		(property "Reference" "#PWR0731"
-			(at 386.08 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 386.08 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 386.08 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 386.08 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 386.08 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22ccfd4d-ab00-4fdd-9f71-daa9e0b85626")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0731")
 					(unit 1)
 				)
 			)
@@ -13571,72 +13124,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 443.23 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f4f63e5-677f-40da-a120-dbc8da823b02")
-		(property "Reference" "#PWR0741"
-			(at 443.23 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 443.23 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 443.23 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 443.23 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 443.23 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25422034-61c3-472c-a670-9d052dc064ac")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0741")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 394.97 81.28 0)
 		(unit 1)
@@ -14980,6 +14467,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D316")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 443.23 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25306823-f87a-4d4f-8fca-62367e525069")
+		(property "Reference" "#PWR0739"
+			(at 443.23 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 443.23 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 443.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 443.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 443.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d1bc145-5370-48f7-8a35-c3d01314ba01")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0739")
 					(unit 1)
 				)
 			)
@@ -16480,72 +16033,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0266")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 374.65 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28827141-ef32-4651-a706-e4c17a096862")
-		(property "Reference" "#PWR0730"
-			(at 374.65 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 374.65 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 374.65 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 374.65 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 374.65 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3ea6bb2d-b048-4041-8a59-ef10721e62bb")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0730")
 					(unit 1)
 				)
 			)
@@ -19220,6 +18707,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 382.27 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f2521cf-67f0-412d-8abf-a0343c90b693")
+		(property "Reference" "#PWR0735"
+			(at 382.27 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 382.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 382.27 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 382.27 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 382.27 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad378dc9-a04a-4a80-8f7a-c6fe38733896")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0735")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 554.99 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20830,6 +20383,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 392.43 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "351aebc5-3d2f-40e9-a9c5-51c06f4948c5")
+		(property "Reference" "#PWR0736"
+			(at 392.43 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 392.43 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 392.43 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 392.43 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 392.43 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0347d12-5954-476d-9f6c-889089cd8993")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0736")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 463.55 137.16 0)
 		(unit 1)
@@ -21502,72 +21121,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 386.08 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37628afd-1474-4120-bdfd-c893a9b48510")
-		(property "Reference" "#PWR0732"
-			(at 386.08 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 386.08 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 386.08 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 386.08 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 386.08 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "23cf6997-c88a-477f-b5ed-a9012f929a3a")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0732")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDD")
 		(at 82.55 45.72 0)
 		(unit 1)
@@ -21627,75 +21180,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR094")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 431.8 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "378b9e9a-c840-41a1-a411-2efe1362741c")
-		(property "Reference" "C89"
-			(at 433.832 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 433.832 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 431.8 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 431.8 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 431.8 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "09d21192-1025-444f-945c-833fee025f3a")
-		)
-		(pin "1"
-			(uuid "743df90a-dc27-4225-8125-265fee5e52a3")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C89")
 					(unit 1)
 				)
 			)
@@ -21989,6 +21473,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D156")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 412.75 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38d69496-2a22-43d8-9241-5f31aac27665")
+		(property "Reference" "#PWR0734"
+			(at 412.75 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 412.75 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 412.75 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 412.75 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 412.75 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3471d43-295b-4662-84c4-1983fc30a6af")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0734")
 					(unit 1)
 				)
 			)
@@ -22665,72 +22215,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0443")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 408.94 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b63a462-1fa2-43b3-8359-138e8f1490dd")
-		(property "Reference" "#PWR0736"
-			(at 408.94 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 408.94 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 408.94 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 408.94 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 408.94 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "652e2e82-120b-4a27-bc32-2d0115294bc1")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0736")
 					(unit 1)
 				)
 			)
@@ -24433,72 +23917,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0666")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 397.51 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41000c8e-affd-46d0-a3b9-251544ec684d")
-		(property "Reference" "#PWR0734"
-			(at 397.51 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 397.51 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 397.51 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 397.51 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 397.51 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7787131c-cf02-4b04-954f-ae09b63d7891")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0734")
 					(unit 1)
 				)
 			)
@@ -28009,72 +27427,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 443.23 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4bd1b67c-c763-44f4-b50c-25f4cae120fc")
-		(property "Reference" "#PWR0742"
-			(at 443.23 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 443.23 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 443.23 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 443.23 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 443.23 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0e14b555-a309-4fa6-9b5e-2153ee823372")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0742")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 326.39 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29073,6 +28425,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0709")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 351.79 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f2a39ff-a049-48f8-a64a-42f24ac92d4c")
+		(property "Reference" "#PWR0725"
+			(at 351.79 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 351.79 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 351.79 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20abc9aa-55be-41a2-ad09-4874c4d477b5")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0725")
 					(unit 1)
 				)
 			)
@@ -31751,6 +31169,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 361.95 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "595b75b8-e545-4fdd-b48f-e2941ae6b191")
+		(property "Reference" "#PWR0727"
+			(at 361.95 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 361.95 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 361.95 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 361.95 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecf7a8cc-b214-4773-8c5b-3bed71d555ab")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0727")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:WS2812B-2020")
 		(at 128.27 76.2 0)
 		(unit 1)
@@ -32016,6 +31500,75 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0361")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 402.59 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59df05a7-5355-4999-9596-a8517bda8c1d")
+		(property "Reference" "C86"
+			(at 404.622 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 404.622 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 402.59 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 402.59 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 402.59 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4f82753e-1b14-41fa-9b1f-c38bcbe37ea9")
+		)
+		(pin "1"
+			(uuid "b530e4ac-6430-4053-92e6-5db034ce78bd")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C86")
 					(unit 1)
 				)
 			)
@@ -34007,72 +33560,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 374.65 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60af35bf-c604-4dfc-b556-5cd885208d03")
-		(property "Reference" "#PWR0729"
-			(at 374.65 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 374.65 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 374.65 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 374.65 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 374.65 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cd2ca19c-1fd1-450d-bea7-a3b64dc6f78c")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0729")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 455.93 35.56 0)
 		(unit 1)
@@ -34197,75 +33684,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0674")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 386.08 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "61ce824c-a5d7-4546-af1d-c1ccc409d915")
-		(property "Reference" "C85"
-			(at 388.112 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 388.112 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 386.08 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 386.08 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 386.08 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "77e2145c-b482-436b-ab4f-f08e97e6a8fa")
-		)
-		(pin "1"
-			(uuid "5baf8cc7-179f-4ddb-a2fd-4917fd89bc41")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C85")
 					(unit 1)
 				)
 			)
@@ -35685,6 +35103,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 402.59 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65aafc47-312c-4344-a599-9d2de114f1a6")
+		(property "Reference" "#PWR0733"
+			(at 402.59 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 402.59 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 402.59 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 402.59 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 402.59 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aefe2265-2edd-4cdf-82ef-a76d8ea42bee")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0733")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 341.63 38.1 0)
 		(unit 1)
@@ -35889,6 +35373,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 392.43 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66ddf8a8-3e68-4379-953e-7dea397a8f2e")
+		(property "Reference" "#PWR0732"
+			(at 392.43 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 392.43 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 392.43 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 392.43 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 392.43 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1504ccab-6df1-496c-85de-ba73bc13fd87")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0732")
 					(unit 1)
 				)
 			)
@@ -37399,75 +36949,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 397.51 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6c4d796e-34b9-418c-af61-48d8711616a5")
-		(property "Reference" "C86"
-			(at 399.542 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 399.542 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 397.51 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 397.51 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 397.51 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "19f07e70-60dc-46f2-bf09-115bb66c029e")
-		)
-		(pin "1"
-			(uuid "fe1cabcc-a58e-4bbd-a9d0-74298922428b")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C86")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 334.01 81.28 0)
 		(unit 1)
@@ -38433,6 +37914,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 433.07 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f232e87-b4a2-4a9c-af53-b29d0f56e4cb")
+		(property "Reference" "#PWR0745"
+			(at 433.07 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 433.07 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 433.07 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 433.07 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 433.07 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d63ff183-7084-4b95-8443-578ca85cf8d5")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0745")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:WS2812B-2020")
 		(at 417.83 121.92 0)
 		(unit 1)
@@ -38637,72 +38184,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0544")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 363.22 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6fb575da-dba5-4f59-ba8a-8d3adbecbfa9")
-		(property "Reference" "#PWR0727"
-			(at 363.22 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 363.22 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 363.22 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 363.22 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "19e3ace7-9c92-4e2f-b365-39da9f8dee67")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0727")
 					(unit 1)
 				)
 			)
@@ -39466,72 +38947,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0457")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 340.36 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "716aa588-77dc-42b9-96b9-5af141eb1ad5")
-		(property "Reference" "#PWR0723"
-			(at 340.36 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 340.36 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 340.36 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 340.36 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "332f4d88-a662-4d31-a024-9f4b9224be10")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0723")
 					(unit 1)
 				)
 			)
@@ -44004,6 +43419,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 443.23 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80c60054-c79f-4377-a368-2be89d2eae80")
+		(property "Reference" "C90"
+			(at 445.262 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 445.262 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 443.23 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 443.23 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 443.23 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b8ef06d4-f567-4c40-9acb-cb6e7353d385")
+		)
+		(pin "1"
+			(uuid "0c4868c5-6a5a-4495-b15b-2cc7dc411bcc")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:WS2812B-2020")
 		(at 82.55 167.64 0)
 		(unit 1)
@@ -45904,72 +45388,6 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 408.94 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8820c04b-0138-4d40-9b70-5033466f54c8")
-		(property "Reference" "#PWR0735"
-			(at 408.94 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 408.94 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 408.94 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 408.94 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 408.94 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82cc150f-3f14-44a5-a9cb-e0bcebac2a7f")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0735")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
 		(at 280.67 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -46794,6 +46212,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 412.75 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8aea2189-bfde-43c4-a22d-da2b1c61406e")
+		(property "Reference" "#PWR0738"
+			(at 412.75 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 412.75 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 412.75 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 412.75 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 412.75 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73033f7c-53ad-4625-839f-a22482d95c10")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0738")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 128.27 114.3 0)
 		(unit 1)
@@ -47048,72 +46532,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0311")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 431.8 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b2644c9-d6a7-4d20-ad76-452b0d98a9d9")
-		(property "Reference" "#PWR0739"
-			(at 431.8 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 431.8 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 431.8 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 431.8 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 431.8 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fbf7d7f8-6351-42c1-9476-53719a8410ea")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0739")
 					(unit 1)
 				)
 			)
@@ -49210,6 +48628,75 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0692")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 412.75 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92e1cbe9-901d-4d09-9b6c-69a380fa4daf")
+		(property "Reference" "C87"
+			(at 414.782 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 414.782 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 412.75 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 412.75 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 412.75 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "82ff809d-7759-4850-9d7f-11d2d3866989")
+		)
+		(pin "1"
+			(uuid "bf43bd71-ceb4-4a1a-941f-e5f11c783eee")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C87")
 					(unit 1)
 				)
 			)
@@ -52606,6 +52093,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 402.59 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f73a072-8464-4861-af41-9072cedc25e2")
+		(property "Reference" "#PWR0737"
+			(at 402.59 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 402.59 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 402.59 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 402.59 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 402.59 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "354e066b-5112-46cb-87ac-79edd602f440")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0737")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 387.35 137.16 0)
 		(unit 1)
@@ -53480,75 +53033,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 363.22 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a20609db-a53c-4376-a85a-fefb737e5f81")
-		(property "Reference" "C83"
-			(at 365.252 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 365.252 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 363.22 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 363.22 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8a6dacfa-387a-46dd-aef4-9b266e41f6c1")
-		)
-		(pin "1"
-			(uuid "38e88955-ce3a-4eee-94a2-571a4c1fbb11")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C83")
 					(unit 1)
 				)
 			)
@@ -55219,72 +54703,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D166")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 363.22 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a5a7647e-0bc9-4f5a-88c2-abcb44f5b534")
-		(property "Reference" "#PWR0728"
-			(at 363.22 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 363.22 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 363.22 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 363.22 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "775aabf5-d999-4ae8-97e4-624b1fda42d4")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0728")
 					(unit 1)
 				)
 			)
@@ -57129,6 +56547,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 433.07 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abc29946-e5ed-4f26-88b5-f862330d3d5c")
+		(property "Reference" "#PWR0724"
+			(at 433.07 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 433.07 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 433.07 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 433.07 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 433.07 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "304b9edb-3ee6-46f8-8edb-3710fea6d135")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0724")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:WS2812B-2020")
 		(at 478.79 190.5 0)
 		(unit 1)
@@ -57841,6 +57325,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0624")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 372.11 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af45affa-91c9-4d74-8ac2-ba07ac0a8672")
+		(property "Reference" "#PWR0730"
+			(at 372.11 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 372.11 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 372.11 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 372.11 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 372.11 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b1e8bf7-df62-40aa-8553-ea7ecd119f70")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0730")
 					(unit 1)
 				)
 			)
@@ -59091,6 +58641,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 392.43 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3185c39-5120-4502-8f13-d42aa223e65f")
+		(property "Reference" "C85"
+			(at 394.462 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 394.462 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 392.43 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 392.43 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 392.43 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8e2b665a-0ac6-4e10-b098-05b185cdc64f")
+		)
+		(pin "1"
+			(uuid "435e04ff-ff3b-4a0a-b141-5886bfac2969")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 433.07 91.44 0)
 		(unit 1)
@@ -59421,6 +59040,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 422.91 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b43264a2-7d12-4f2d-bfa3-69ebcb98ce49")
+		(property "Reference" "#PWR0744"
+			(at 422.91 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 422.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 422.91 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 422.91 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 422.91 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6108f179-69d1-4fc5-9737-9d48fc924c50")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0744")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 334.01 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -59555,6 +59240,75 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 433.07 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b48c9f37-fc4a-43ae-bc3d-2e2ffd71cf10")
+		(property "Reference" "C89"
+			(at 435.102 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 435.102 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 433.07 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 433.07 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 433.07 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "06ff3bc2-a5d4-45c2-8fd0-0878d6700bd5")
+		)
+		(pin "1"
+			(uuid "1c2439dd-3e1a-475b-9fe1-7813733c4fb1")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C89")
 					(unit 1)
 				)
 			)
@@ -59967,6 +59721,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D295")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 372.11 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b664b167-b8a2-4ae0-8431-28ea9a71e24a")
+		(property "Reference" "#PWR0728"
+			(at 372.11 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 372.11 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 372.11 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 372.11 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 372.11 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f1d92fd-7537-4a74-9a31-a08047639180")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0728")
 					(unit 1)
 				)
 			)
@@ -63553,15 +63373,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
-		(at 443.23 224.79 0)
+		(at 351.79 229.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c23e7a3d-9c08-4fdb-b0a4-d4db01a7d428")
-		(property "Reference" "C90"
-			(at 445.262 223.52 0)
+		(uuid "c242b59e-b2f2-491c-9203-4202e0da65f3")
+		(property "Reference" "C81"
+			(at 353.822 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63569,8 +63389,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
-			(at 445.262 226.06 0)
+		(property "Value" "100 uF"
+			(at 353.822 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63578,8 +63398,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 443.23 224.79 0)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 351.79 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63588,7 +63408,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 443.23 224.79 0)
+			(at 351.79 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63597,7 +63417,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small US symbol"
-			(at 443.23 224.79 0)
+			(at 351.79 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63606,81 +63426,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "3a8e7ea1-626d-48ed-87ce-737b06c9db65")
+			(uuid "4b058bf0-f341-48a4-88f3-25d8195fa853")
 		)
 		(pin "1"
-			(uuid "4fe403f7-4fa2-46e1-8d74-593c5ab65477")
-		)
-		(instances
-			(project ""
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C90")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 340.36 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c255514f-fc9c-481d-bb2d-7bf8a1c29101")
-		(property "Reference" "#PWR0724"
-			(at 340.36 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 340.36 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 340.36 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 340.36 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4493b954-e08a-4470-9077-17364e2296e9")
+			(uuid "696dd017-7bc6-4a9b-aaaf-304d80097dfa")
 		)
 		(instances
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0724")
+					(reference "C81")
 					(unit 1)
 				)
 			)
@@ -64451,6 +64205,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0375")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 361.95 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5bf381f-cb79-4921-ba30-d8253d33c91f")
+		(property "Reference" "#PWR0729"
+			(at 361.95 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 361.95 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 361.95 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 361.95 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "411c7343-c534-4c21-8363-308f8b955d68")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0729")
 					(unit 1)
 				)
 			)
@@ -65724,75 +65544,6 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0719")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 374.65 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ca09260f-4893-4a4f-96e3-886a79f40064")
-		(property "Reference" "C84"
-			(at 376.682 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 376.682 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 374.65 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 374.65 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 374.65 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e52aca83-410e-41e8-95b3-5bdcc15ba4dc")
-		)
-		(pin "1"
-			(uuid "a73d4ed6-c620-4313-a82b-04dd43ae22a5")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C84")
 					(unit 1)
 				)
 			)
@@ -67819,72 +67570,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 397.51 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1e093c9-8d90-4937-b3a1-940de2906136")
-		(property "Reference" "#PWR0733"
-			(at 397.51 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 397.51 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 397.51 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 397.51 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 397.51 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fdbd137e-a5f3-4668-980a-e4642407db3f")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "#PWR0733")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 82.55 60.96 0)
 		(unit 1)
@@ -68794,6 +68479,75 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "D215")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 422.91 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4f057c8-520a-4f28-a995-6b79c0f002e6")
+		(property "Reference" "C88"
+			(at 424.942 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 424.942 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 422.91 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 422.91 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 422.91 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c8da25db-73b3-48e6-9a70-288b35ca5099")
+		)
+		(pin "1"
+			(uuid "b889e5de-7807-4d80-ba43-a05444ed5146")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C88")
 					(unit 1)
 				)
 			)
@@ -72595,6 +72349,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 372.11 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e1f17b62-dae4-4456-9044-eaa38bafe44e")
+		(property "Reference" "C83"
+			(at 374.142 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 374.142 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 372.11 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 372.11 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 372.11 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "04439c81-f13b-4c13-a4f8-4ad949d324d7")
+		)
+		(pin "1"
+			(uuid "93346713-e614-4d5d-8a5e-0f23d35cd897")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 52.07 114.3 0)
 		(unit 1)
@@ -73671,6 +73494,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 382.27 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4a4820c-6ddc-434a-81c5-bf0662f5e68d")
+		(property "Reference" "#PWR0731"
+			(at 382.27 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 382.27 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 382.27 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 382.27 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 382.27 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df8d39d5-1896-42db-8631-f6f4af6c0469")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0731")
 					(unit 1)
 				)
 			)
@@ -76932,6 +76821,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 361.95 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "effcb56c-c739-4417-8a21-bf8d7ff21673")
+		(property "Reference" "C82"
+			(at 363.982 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 363.982 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 361.95 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 361.95 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 361.95 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b851c3a8-3858-4d16-bce5-b6fea2a5283f")
+		)
+		(pin "1"
+			(uuid "33906290-0d0c-4390-a778-c1597eac2a60")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 554.99 91.44 0)
 		(unit 1)
@@ -78354,6 +78312,72 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0254")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 422.91 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f54a9c47-d84a-4eb5-a347-82de66beb7f9")
+		(property "Reference" "#PWR0723"
+			(at 422.91 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 422.91 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 422.91 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 422.91 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 422.91 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a291a563-9170-4d36-aa07-eea6bcad4d8e")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "#PWR0723")
 					(unit 1)
 				)
 			)
@@ -80489,75 +80513,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 351.79 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fc45b040-d8c9-4ead-a847-b547eef20f1c")
-		(property "Reference" "C82"
-			(at 353.822 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 353.822 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 351.79 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 351.79 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 351.79 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "14189a0d-ce08-4f68-8eba-389a340bab4e")
-		)
-		(pin "1"
-			(uuid "80195518-e03d-4c53-9bf9-b5ce0be1d63d")
-		)
-		(instances
-			(project "display"
-				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
-					(reference "C82")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:WS2812B-2020")
 		(at 356.87 30.48 0)
 		(unit 1)
@@ -81518,6 +81473,75 @@
 			(project "display"
 				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
 					(reference "#PWR0380")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 382.27 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff3633ab-7641-456c-acf8-7ff2834e0876")
+		(property "Reference" "C84"
+			(at 384.302 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 uF"
+			(at 384.302 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+			(at 382.27 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 382.27 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 382.27 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ebd61ef6-fc8c-4dc3-b9ae-b83974bdf99a")
+		)
+		(pin "1"
+			(uuid "99a2669b-7060-40b2-94db-7409603b8e15")
+		)
+		(instances
+			(project "display"
+				(path "/9b60b320-874d-44b6-b087-015e7978b04e"
+					(reference "C84")
 					(unit 1)
 				)
 			)
