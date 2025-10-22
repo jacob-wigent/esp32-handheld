@@ -31532,7 +31532,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 402.59 229.87 0)
 			(effects
 				(font
@@ -43445,7 +43445,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 443.23 229.87 0)
 			(effects
 				(font
@@ -48660,7 +48660,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 412.75 229.87 0)
 			(effects
 				(font
@@ -58667,7 +58667,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 392.43 229.87 0)
 			(effects
 				(font
@@ -59272,7 +59272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 433.07 229.87 0)
 			(effects
 				(font
@@ -63398,7 +63398,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 351.79 229.87 0)
 			(effects
 				(font
@@ -68511,7 +68511,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 422.91 229.87 0)
 			(effects
 				(font
@@ -72375,7 +72375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 372.11 229.87 0)
 			(effects
 				(font
@@ -76847,7 +76847,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 361.95 229.87 0)
 			(effects
 				(font
@@ -81505,7 +81505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX"
+		(property "Footprint" "esp32_handheld:CAP_TAJ-D- 2917-S_AVX_NO_RESTRICTION"
 			(at 382.27 229.87 0)
 			(effects
 				(font
