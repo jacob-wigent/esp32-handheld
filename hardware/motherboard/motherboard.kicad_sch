@@ -5536,7 +5536,7 @@
 		)
 		(uuid "5a51f8e0-f71a-4939-810c-9b22b9190fd4")
 	)
-	(text "Display Power Regulator"
+	(text "Peripheral Power Regulator"
 		(exclude_from_sim no)
 		(at 207.772 133.858 0)
 		(effects
@@ -5560,9 +5560,9 @@
 		)
 		(uuid "6d41b391-f9a0-49e3-847f-dc2c7049e7b8")
 	)
-	(text "Determine suitible\nLED for VIN range\nand calculate\nresistor value."
+	(text "Safe to assume that\nVIN will be 5V when\nbattery is charging."
 		(exclude_from_sim no)
-		(at 116.84 120.65 0)
+		(at 117.602 119.634 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -5762,7 +5762,7 @@
 	)
 	(text "ACCs likely need voltage divider so\nMCU can tolerate possible communication \nvoltage spikes up to 5V!!!!!"
 		(exclude_from_sim no)
-		(at 28.702 159.512 0)
+		(at 38.608 158.75 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -6074,14 +6074,6 @@
 		(uuid "fab11f3d-4c2f-4448-82ca-37b53d1c4389")
 	)
 	(no_connect
-		(at 237.49 48.26)
-		(uuid "0a026f5f-40a1-4207-af42-e58f98ec30ca")
-	)
-	(no_connect
-		(at 237.49 50.8)
-		(uuid "2112751a-02e5-4b9c-aa98-202559f9b21f")
-	)
-	(no_connect
 		(at 33.02 102.87)
 		(uuid "257ebc98-735d-47ad-a810-1f18da4ccd7b")
 	)
@@ -6092,10 +6084,6 @@
 	(no_connect
 		(at 237.49 33.02)
 		(uuid "86f116dd-50b2-4aa5-894a-74d1d05f3d88")
-	)
-	(no_connect
-		(at 237.49 53.34)
-		(uuid "8a8baed8-2459-4ff0-8d2c-1ffda0f10577")
 	)
 	(no_connect
 		(at 237.49 30.48)
@@ -6521,16 +6509,6 @@
 			(color 255 0 13 1)
 		)
 		(uuid "2a9936e9-407c-4c3a-83b7-c0dd16e28a49")
-	)
-	(wire
-		(pts
-			(xy 193.04 73.66) (xy 207.01 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b3d672a-b2cb-439c-ad86-606982eff257")
 	)
 	(wire
 		(pts
@@ -8700,7 +8678,7 @@
 			)
 		)
 	)
-	(global_label "VDisplay"
+	(global_label "VPeripheral"
 		(shape input)
 		(at 243.84 147.32 270)
 		(fields_autoplaced yes)
@@ -8712,7 +8690,7 @@
 		)
 		(uuid "4561d485-f39c-464b-95b0-518b711795fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.84 158.2275 90)
+			(at 243.84 161.1304 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8944,7 +8922,7 @@
 	)
 	(global_label "Start"
 		(shape input)
-		(at 207.01 40.64 180)
+		(at 184.15 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8954,7 +8932,7 @@
 		)
 		(uuid "74b4ce83-f660-4d17-af69-b3f97de99b08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.4287 40.64 0)
+			(at 176.5687 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9382,7 +9360,7 @@
 			)
 		)
 	)
-	(global_label "VDisplay"
+	(global_label "VPeripheral"
 		(shape input)
 		(at 226.06 143.51 180)
 		(fields_autoplaced yes)
@@ -9394,7 +9372,7 @@
 		)
 		(uuid "bab4850f-b513-4f5c-a03a-3f8bedbbaa21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.1525 143.51 0)
+			(at 212.2496 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
