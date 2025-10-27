@@ -7831,6 +7831,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 180.34) (xy 119.38 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5064bfa-22a6-4d95-84b9-cd698c958cbf")
+	)
+	(wire
+		(pts
 			(xy 72.39 69.85) (xy 73.66 69.85)
 		)
 		(stroke
@@ -8281,16 +8291,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 180.34) (xy 119.38 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4d1704e-58b6-4c54-a15c-e009528c5f23")
-	)
-	(wire
-		(pts
 			(xy 91.44 31.75) (xy 91.44 33.02)
 		)
 		(stroke
@@ -8470,7 +8470,7 @@
 	)
 	(global_label "Dis7"
 		(shape input)
-		(at 275.59 152.4 270)
+		(at 262.89 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8480,7 +8480,7 @@
 		)
 		(uuid "146a61e8-42b7-47f4-b22a-703f0f0963cd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 275.59 159.4976 90)
+			(at 262.89 159.4976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8580,7 +8580,7 @@
 	)
 	(global_label "Dis3"
 		(shape input)
-		(at 265.43 152.4 270)
+		(at 273.05 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8590,7 +8590,7 @@
 		)
 		(uuid "20face19-ca92-4dbd-a940-89e8a6aa6d72")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 265.43 159.4976 90)
+			(at 273.05 159.4976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8844,7 +8844,7 @@
 	)
 	(global_label "Dis2"
 		(shape input)
-		(at 262.89 152.4 270)
+		(at 275.59 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8854,7 +8854,7 @@
 		)
 		(uuid "4e230420-285a-44e9-8550-176bf86ec8fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 262.89 159.4976 90)
+			(at 275.59 159.4976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8954,7 +8954,7 @@
 	)
 	(global_label "Dis6"
 		(shape input)
-		(at 273.05 152.4 270)
+		(at 265.43 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8964,7 +8964,7 @@
 		)
 		(uuid "5a6fec30-401e-4c76-ae65-59b8a51f9236")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 273.05 159.4976 90)
+			(at 265.43 159.4976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9350,7 +9350,7 @@
 	)
 	(global_label "Dis4"
 		(shape input)
-		(at 267.97 152.4 270)
+		(at 270.51 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9360,7 +9360,7 @@
 		)
 		(uuid "9ad8b4a3-5a77-4eb8-8dd2-21105691d142")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.97 159.4976 90)
+			(at 270.51 159.4976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9746,7 +9746,7 @@
 	)
 	(global_label "Dis5"
 		(shape input)
-		(at 270.51 152.4 270)
+		(at 267.97 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9756,7 +9756,7 @@
 		)
 		(uuid "d35f1294-60cd-4e8d-8327-745d31f2d8f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 270.51 159.4976 90)
+			(at 267.97 159.4976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9878,7 +9878,7 @@
 	)
 	(global_label "Dis1"
 		(shape input)
-		(at 260.35 152.4 270)
+		(at 278.13 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9888,7 +9888,7 @@
 		)
 		(uuid "e1206575-4e10-43a5-a3ec-b37f3ca2d41b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.35 159.4976 90)
+			(at 278.13 159.4976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10054,7 +10054,7 @@
 	)
 	(global_label "Dis8"
 		(shape input)
-		(at 278.13 152.4 270)
+		(at 260.35 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10064,7 +10064,7 @@
 		)
 		(uuid "ed5ea9d3-8615-403d-9038-05ca55e49ed2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 278.13 159.4976 90)
+			(at 260.35 159.4976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11630,7 +11630,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 30.48 107.95 0)
 			(effects
 				(font
@@ -13185,7 +13185,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_VH_B2P-VH-FB-B_1x02_P3.96mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal"
 			(at 17.78 121.92 0)
 			(effects
 				(font
@@ -15453,7 +15453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B8B-PH-SM4-TB_1x08-1MP_P2.00mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal"
 			(at 267.97 147.32 0)
 			(effects
 				(font
