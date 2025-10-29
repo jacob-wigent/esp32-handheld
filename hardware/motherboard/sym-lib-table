@@ -1,5 +1,4 @@
 (sym_lib_table
   (version 7)
   (lib (name "esp32_handheld")(type "KiCad")(uri "${OPS2_HANDHELD}/esp32_handheld.kicad_sym")(options "")(descr ""))
-  (lib (name "COM-09032")(type "KiCad")(uri "C:/Users/Jacob/Downloads/COM_09032 (1)/COM-09032.kicad_sym")(options "")(descr ""))
 )
