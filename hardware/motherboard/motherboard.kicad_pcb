@@ -17593,16 +17593,15 @@
 			(uuid "1979a177-d167-4ac4-9213-c0700d171c21")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.step"
-			(hide yes)
+		(model "${OPS2_HANDHELD}/esp_32_handheld.3dshapes/MPU 6050 IMU.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz -6.75 1.4 -8)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -22932,14 +22931,6 @@
 		(uuid "6e7500a2-c53d-40ed-a11e-dddaac716715")
 	)
 	(segment
-		(start 139.6625 45.99)
-		(end 139.7 45.9525)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "da87c5c4-eff9-4fc2-8feb-c59a7f9ddc45")
-	)
-	(segment
 		(start 155.9625 46.7125)
 		(end 156 46.75)
 		(width 0.75)
@@ -25682,14 +25673,6 @@
 		(uuid "ba27951c-3357-492d-89b1-a542cd6adeae")
 	)
 	(segment
-		(start 136.525 47.99)
-		(end 136.16 47.99)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 26)
-		(uuid "c0faef70-6cbc-4511-b45e-bebbb0b955ac")
-	)
-	(segment
 		(start 109.25 21.15)
 		(end 107.2375 21.15)
 		(width 0.75)
@@ -25956,14 +25939,6 @@
 		(layer "B.Cu")
 		(net 27)
 		(uuid "22bdec6f-16dd-47bd-93d8-ca4a6eecd8ac")
-	)
-	(segment
-		(start 76.835 27.305)
-		(end 79.645 27.305)
-		(width 0.5)
-		(layer "B.Cu")
-		(net 27)
-		(uuid "25524881-37cc-42e3-81ba-6863ac66f411")
 	)
 	(segment
 		(start 111.33 23.25)
