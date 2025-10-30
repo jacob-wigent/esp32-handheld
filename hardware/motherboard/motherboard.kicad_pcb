@@ -22290,6 +22290,32 @@
 		(layer "Edge.Cuts")
 		(uuid "d75219e2-0e19-4b66-9ec1-1a8b2d5ec4c6")
 	)
+	(gr_text "BAT"
+		(at 61.372916 40.14 0)
+		(layer "F.SilkS")
+		(uuid "b858dac7-a126-410f-8d1a-870bd2028a32")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.17)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "DISP"
+		(at 70.254377 40.14 0)
+		(layer "F.SilkS")
+		(uuid "bdefb872-c45d-41fb-bb9f-085cec59fa85")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.17)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Vperipheral"
 		(at 80.01 40.64 0)
 		(layer "B.SilkS")
