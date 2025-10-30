@@ -20295,7 +20295,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "B.Cu")
 		(uuid "09e968e8-d3ab-4bdb-b6fc-e7cb92cf9ee4")
-		(at 80.645 27.305)
+		(at 88 35.5)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R14"
@@ -21447,7 +21447,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "B.Cu")
 		(uuid "9feeaee6-e821-4c4e-8f39-3c1895ebcb35")
-		(at 75.7975 27.305 180)
+		(at 84.9625 32.25 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C14"
@@ -21800,17 +21800,6 @@
 		(layer "Dwgs.User")
 		(uuid "70147ad8-4256-4aa0-be61-1f2f7c632e93")
 	)
-	(gr_arc
-		(start 157.015 12.056181)
-		(mid 161.960377 14.104623)
-		(end 164.008819 19.05)
-		(stroke
-			(width 0.15)
-			(type default)
-		)
-		(layer "Dwgs.User")
-		(uuid "718efa0d-b8ca-464b-abe0-01feb033cbd0")
-	)
 	(gr_rect
 		(start 50 80)
 		(end 88 102)
@@ -21833,6 +21822,16 @@
 		(layer "Dwgs.User")
 		(uuid "986159a8-7b5e-422c-a2e9-b9dd54726f65")
 	)
+	(gr_line
+		(start 160.485281 15.517323)
+		(end 152 24.002604)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "a5c50f46-8d7a-4750-82b8-b33ec5a5fb04")
+	)
 	(gr_rect
 		(start 88 80)
 		(end 126 102)
@@ -21843,28 +21842,6 @@
 		(fill no)
 		(layer "Dwgs.User")
 		(uuid "aae667b2-891b-4acd-855a-6e3fe800d9f1")
-	)
-	(gr_rect
-		(start 12 12)
-		(end 164 102)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(fill no)
-		(layer "Dwgs.User")
-		(uuid "b12b1be1-5d69-40f8-bf02-8505969c6a27")
-	)
-	(gr_arc
-		(start 12.056181 19.058819)
-		(mid 14.104624 14.113443)
-		(end 19.05 12.065)
-		(stroke
-			(width 0.15)
-			(type default)
-		)
-		(layer "Dwgs.User")
-		(uuid "b6cad298-872f-4916-9a74-c3b93ad407f3")
 	)
 	(gr_rect
 		(start 48 52)
@@ -21878,7 +21855,39 @@
 		(uuid "ca4b6ee8-8cb5-4b6b-9ec2-7d6aa1fadb1f")
 	)
 	(gr_line
-		(start 164 12)
+		(start 24 24)
+		(end 15.514719 15.514719)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Eco1.User")
+		(uuid "38593c0f-b14c-4bf4-881f-fe7d30ccced4")
+	)
+	(gr_circle
+		(center 152 24.002604)
+		(end 164 24.002604)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "Eco1.User")
+		(uuid "df10fdf7-537d-49a3-8f76-11397ab20ad0")
+	)
+	(gr_circle
+		(center 24 24)
+		(end 36 24)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "Eco1.User")
+		(uuid "fea47527-aca7-4d62-b4dc-115dd3f2491c")
+	)
+	(gr_line
+		(start 164 24)
 		(end 164 80)
 		(stroke
 			(width 0.1)
@@ -21889,7 +21898,7 @@
 	)
 	(gr_line
 		(start 12 80)
-		(end 12 12)
+		(end 12 23.75)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -21916,6 +21925,28 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "5de252e7-f52b-4f41-aa1a-77c185a7467e")
+	)
+	(gr_arc
+		(start 12 23.75)
+		(mid 15.601731 15.424945)
+		(end 24 11.997396)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "7021277d-46b4-4b69-8d01-9f169f241a55")
+	)
+	(gr_arc
+		(start 152 12)
+		(mid 160.485281 15.514719)
+		(end 164 24)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "887011ef-f514-48ed-ad58-2233937beaa8")
 	)
 	(gr_line
 		(start 128 80)
@@ -21948,11 +21979,11 @@
 		(uuid "b83af5c5-7e74-4577-8558-766ab28d2a73")
 	)
 	(gr_line
-		(start 12 12)
-		(end 164 12)
+		(start 24 11.997396)
+		(end 152 11.997396)
 		(stroke
 			(width 0.1)
-			(type default)
+			(type solid)
 		)
 		(layer "Edge.Cuts")
 		(uuid "d75219e2-0e19-4b66-9ec1-1a8b2d5ec4c6")
