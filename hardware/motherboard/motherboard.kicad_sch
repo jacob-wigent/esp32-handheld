@@ -9655,7 +9655,7 @@
 	)
 	(global_label "StckBtn"
 		(shape input)
-		(at 271.78 22.86 180)
+		(at 207.01 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9665,7 +9665,7 @@
 		)
 		(uuid "afb4fcc9-805f-4c53-bf01-1376eea10e79")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.5982 22.86 0)
+			(at 196.8282 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
