@@ -22290,6 +22290,84 @@
 		(layer "Edge.Cuts")
 		(uuid "d75219e2-0e19-4b66-9ec1-1a8b2d5ec4c6")
 	)
+	(gr_text "Vperipheral"
+		(at 80.01 40.64 0)
+		(layer "B.SilkS")
+		(uuid "0417ca70-5281-42ed-84a7-e3f52f929ead")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.17)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "VBat"
+		(at 78.105 33.02 0)
+		(layer "B.SilkS")
+		(uuid "47234a13-6c3a-4fed-b238-1bec357acc7a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.17)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "3V3"
+		(at 103.505 28.575 0)
+		(layer "B.SilkS")
+		(uuid "63c63b62-1448-4ed2-a6b7-8563ad3f15de")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.17)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "VIN"
+		(at 48.26 21.59 0)
+		(layer "B.SilkS")
+		(uuid "83f6e4b6-0740-4bcf-93d1-92d0b1a74613")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.17)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "GND"
+		(at 63.5 40.64 0)
+		(layer "B.SilkS")
+		(uuid "a5e93a0b-d415-4693-a1f7-fae1380a0c3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.17)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "Abat"
+		(at 82.55 33.02 0)
+		(layer "B.SilkS")
+		(uuid "c2fd0d39-1a94-41d4-ae30-75b080374ff2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.17)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "Battery"
 		(at 88 91 0)
 		(layer "Dwgs.User")
