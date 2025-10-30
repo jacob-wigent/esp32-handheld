@@ -13650,7 +13650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_RS282G05A3"
 			(at 132.08 137.16 0)
 			(effects
 				(font
