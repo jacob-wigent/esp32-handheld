@@ -5476,7 +5476,7 @@
 	)
 	(text "Needs motor speaker driver circuits"
 		(exclude_from_sim no)
-		(at 252.476 110.236 0)
+		(at 252.73 91.44 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -8643,22 +8643,22 @@
 	)
 	(global_label "BLeft"
 		(shape input)
-		(at 266.7 41.91 180)
+		(at 237.49 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "1cf67809-75b9-47bd-9182-470b219bfa4e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 258.8767 41.91 0)
+			(at 245.3133 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -8841,7 +8841,7 @@
 	)
 	(global_label "Left"
 		(shape input)
-		(at 266.7 30.48 0)
+		(at 237.49 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8851,7 +8851,7 @@
 		)
 		(uuid "3815b253-fdd0-4d70-8d0f-26f2260e0e78")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 273.2533 30.48 0)
+			(at 244.0433 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9281,7 +9281,7 @@
 	)
 	(global_label "Speaker"
 		(shape input)
-		(at 270.51 50.8 0)
+		(at 246.38 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9291,7 +9291,7 @@
 		)
 		(uuid "7fe76da6-0440-4238-a9b5-0d2ef353ce0b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 280.9942 50.8 0)
+			(at 256.8642 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9587,6 +9587,28 @@
 			)
 		)
 	)
+	(global_label "Motor"
+		(shape input)
+		(at 231.14 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a071895c-ef0b-4a03-bd3f-173689b6c0d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.8935 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Select{slash}Boot"
 		(shape input)
 		(at 207.01 35.56 180)
@@ -9831,7 +9853,7 @@
 	)
 	(global_label "Down"
 		(shape input)
-		(at 265.43 33.02 0)
+		(at 237.49 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9841,7 +9863,7 @@
 		)
 		(uuid "cb5c45cd-252c-4d63-b40a-afe3a8d188be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 273.3137 33.02 0)
+			(at 245.3737 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10249,7 +10271,7 @@
 	)
 	(global_label "Motor"
 		(shape input)
-		(at 270.51 53.34 0)
+		(at 246.38 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10259,7 +10281,29 @@
 		)
 		(uuid "f52c2167-4ce8-4dde-9546-0f02252aa75a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 278.7565 53.34 0)
+			(at 254.6265 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Speaker"
+		(shape input)
+		(at 271.78 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc78b61a-734a-425b-94ee-96fe9f1b618d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 282.2642 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
