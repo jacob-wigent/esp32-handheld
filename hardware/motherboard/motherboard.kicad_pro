@@ -541,7 +541,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../Downloads/motherboard.step",
+      "step": "../../../../../Downloads/motherboard.step",
       "svg": "",
       "vrml": ""
     },
