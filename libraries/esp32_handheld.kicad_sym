@@ -326,7 +326,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Low_Profile_Joystick"
+	(symbol "Joycon"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -373,7 +373,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "Low_Profile_Joystick_0_1"
+		(symbol "Joycon_0_1"
 			(rectangle
 				(start -8.89 8.89)
 				(end 8.89 -8.89)
@@ -505,7 +505,7 @@
 				)
 			)
 		)
-		(symbol "Low_Profile_Joystick_1_1"
+		(symbol "Joycon_1_1"
 			(polyline
 				(pts
 					(xy -3.81 -6.35) (xy -6.35 -6.35) (xy -6.35 6.35) (xy 8.89 6.35) (xy 6.35 6.35) (xy 6.35 3.81)
@@ -556,16 +556,70 @@
 				)
 			)
 			(pin input line
-				(at 0 -10.16 90)
+				(at -8.89 -3.81 0)
 				(length 1.016)
-				(name "XOUT"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -5.08 -8.89 90)
+				(length 1.016)
+				(name "Switch"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 -10.16 90)
+				(length 1.016)
+				(name "AD2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 5.08 -8.89 90)
+				(length 1.016)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -583,7 +637,7 @@
 						)
 					)
 				)
-				(number ""
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -594,32 +648,14 @@
 			(pin input line
 				(at 10.16 0 180)
 				(length 1.016)
-				(name "YOUT"
+				(name "AD1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 -6.35 180)
-				(length 1.016)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
