@@ -66788,6 +66788,7 @@
 		(path "/e9eebd6c-f6c8-42fb-bc92-ff80d20a0320")
 		(sheetname "/")
 		(sheetfile "display.kicad_sch")
+		(clearance 0.5)
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
