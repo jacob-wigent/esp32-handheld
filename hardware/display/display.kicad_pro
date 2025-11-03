@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.7,
-          "height": 2.7,
-          "width": 2.7
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.2,
         "silk_text_italic": false,
@@ -534,7 +534,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../Downloads/display.step",
+      "step": "../../../../../Downloads/display.step",
       "svg": "",
       "vrml": ""
     },
