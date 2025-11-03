@@ -6230,7 +6230,7 @@
 		)
 		(uuid "75d4141b-e786-42a3-bff5-6a8123021a89")
 	)
-	(text "(5V - 2V)/2mA = 100ohm"
+	(text "(5V - 2V)/20mA = 150ohm"
 		(exclude_from_sim no)
 		(at 110.998 118.618 0)
 		(effects
@@ -6263,6 +6263,16 @@
 			)
 		)
 		(uuid "9236f157-be7e-4fd1-b0bc-080ee413ee21")
+	)
+	(text "(3.3V - 2V)/20mA = 65ohm"
+		(exclude_from_sim no)
+		(at 140.462 68.072 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "a2341a32-8e95-4650-b44d-7f90637ac566")
 	)
 	(text "A/B/X/Y"
 		(exclude_from_sim no)
@@ -13172,7 +13182,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 105.41 121.92 0)
 			(effects
 				(font
@@ -15566,7 +15576,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "150"
 			(at 116.84 131.572 90)
 			(effects
 				(font
@@ -19645,15 +19655,15 @@
 		(dnp no)
 		(uuid "d48a14eb-9633-4f1b-984f-96fa604d8aed")
 		(property "Reference" "R27"
-			(at 153.67 64.262 90)
+			(at 154.686 67.056 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100"
-			(at 149.86 69.85 90)
+		(property "Value" "65"
+			(at 150.114 67.564 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19865,7 +19875,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 148.59 58.42 0)
 			(effects
 				(font
