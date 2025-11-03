@@ -117910,8 +117910,8 @@
 		(uuid "04a38e71-7ce9-4a32-a1ea-7ceab237f98f")
 	)
 	(gr_circle
-		(center 3.6 37.235)
-		(end 5.28 37.235)
+		(center 6.6 37.235)
+		(end 8.28 37.235)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -117979,17 +117979,6 @@
 		)
 		(layer "Dwgs.User")
 		(uuid "5722ce06-7e26-44fe-9170-03570c07a242")
-	)
-	(gr_rect
-		(start -19.165 32.71)
-		(end -15.355 36.52)
-		(stroke
-			(width 0.15)
-			(type default)
-		)
-		(fill no)
-		(layer "Dwgs.User")
-		(uuid "6b311b7f-111b-4d3c-aaa0-167c432ba175")
 	)
 	(gr_line
 		(start 7 13)
@@ -118125,8 +118114,8 @@
 		(uuid "dac35f76-9e7e-4b43-99c9-255b1caea612")
 	)
 	(gr_rect
-		(start 0.6 34.235)
-		(end 6.6 40.235)
+		(start 3.6 34.235)
+		(end 9.6 40.235)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -118144,17 +118133,6 @@
 		)
 		(layer "Dwgs.User")
 		(uuid "e4ac4352-c279-40df-a7aa-34d4fc55ffe7")
-	)
-	(gr_circle
-		(center -17.26 34.615)
-		(end -16.26 34.615)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(fill no)
-		(layer "Dwgs.User")
-		(uuid "ee446209-c145-4d36-b347-c857b376e814")
 	)
 	(gr_line
 		(start 7 49)
@@ -118387,7 +118365,7 @@
 		(uuid "f78156fa-fa25-436c-8104-cbc0b878b4a3")
 	)
 	(gr_text "Right-DPAD"
-		(at -2.195 33.305 0)
+		(at 0.05 33.7 0)
 		(layer "Dwgs.User")
 		(uuid "5dc34e5a-9784-4087-82a0-4657955a6f25")
 		(effects
