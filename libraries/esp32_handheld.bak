@@ -556,6 +556,24 @@
 				)
 			)
 			(pin input line
+				(at -8.89 -3.81 0)
+				(length 1.016)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at -5.08 -8.89 90)
 				(length 1.016)
 				(name "Switch"
@@ -592,6 +610,24 @@
 				)
 			)
 			(pin input line
+				(at 5.08 -8.89 90)
+				(length 1.016)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at 10.16 6.35 180)
 				(length 1.016)
 				(name "VCC"
@@ -620,24 +656,6 @@
 					)
 				)
 				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 -6.35 180)
-				(length 1.016)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)

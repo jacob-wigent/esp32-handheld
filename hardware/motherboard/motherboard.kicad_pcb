@@ -22988,7 +22988,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R24"
-			(at -0.2 1.7 0)
+			(at 0.4 1.7 0)
 			(layer "B.SilkS")
 			(uuid "89506e95-bc94-4f0d-b94c-36aa20d33f1e")
 			(effects
@@ -23300,7 +23300,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R23"
-			(at -0.1 -1.7 0)
+			(at 0.45 -1.7 0)
 			(layer "B.SilkS")
 			(uuid "71ded893-35c1-4b92-b30c-05cceacbcd3c")
 			(effects
@@ -23504,7 +23504,7 @@
 		(descr "https://www.mouser.com/ds/2/60/RS-282G05A-SM_RT-1159762.pdf")
 		(tags "SPST button tactile switch")
 		(property "Reference" "SW13"
-			(at 2.65 3.25 0)
+			(at 2.65 3.25 180)
 			(layer "B.SilkS")
 			(uuid "2d54e669-d168-4262-87dc-9f4fe7b47639")
 			(effects
@@ -23516,7 +23516,7 @@
 			)
 		)
 		(property "Value" "Reset"
-			(at 0 -3 0)
+			(at 0 -3 180)
 			(layer "B.Fab")
 			(uuid "a900bc83-6ca7-4ab3-90ac-41cf1f4ede5f")
 			(effects
@@ -23560,8 +23560,8 @@
 		(sheetfile "motherboard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -3.06 -1.85)
-			(end -3.06 1.85)
+			(start -2.8 -1.85)
+			(end -2.8 1.85)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -23570,8 +23570,8 @@
 			(uuid "370739ca-03ac-49ba-9d2c-73e9c937cfaa")
 		)
 		(fp_line
-			(start -3.06 1.85)
-			(end 3.06 1.85)
+			(start -2.8 1.85)
+			(end 2.85 1.85)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -23580,8 +23580,8 @@
 			(uuid "acbe34f3-7d67-40aa-a4f4-65293f80c2e1")
 		)
 		(fp_line
-			(start 3.06 -1.85)
-			(end -3.06 -1.85)
+			(start 2.85 -1.85)
+			(end -2.8 -1.85)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -23590,8 +23590,8 @@
 			(uuid "e8de3496-a35b-44d2-8a57-c1839e3897b6")
 		)
 		(fp_line
-			(start 3.06 1.85)
-			(end 3.06 -1.85)
+			(start 2.85 1.85)
+			(end 2.85 -1.85)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -23760,7 +23760,7 @@
 			(uuid "9d46f5e5-7d2d-4a32-8fec-b2d2411056f0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.6 0)
+			(at 0 2.6 180)
 			(layer "B.Fab")
 			(uuid "d5bce5fe-2dd1-4ec3-9e3a-c5b480be86bc")
 			(effects
@@ -34791,7 +34791,7 @@
 				(xy 163.176898 23.643852) (xy 162.930657 23.343807) (xy 162.930656 23.343806) (xy 162.930652 23.343801)
 				(xy 162.656198 23.069347) (xy 162.356153 22.823106) (xy 162.356152 22.823105) (xy 162.356148 22.823102)
 				(xy 162.033412 22.607457) (xy 162.033407 22.607454) (xy 162.0334 22.60745) (xy 161.6911 22.424487)
-				(xy 161.691095 22.424485) (xy 161.629361 22.398914) (xy 161.586061 22.380978) (xy 161.332489 22.275945)
+				(xy 161.691095 22.424485) (xy 161.615781 22.393289) (xy 161.586061 22.380978) (xy 161.332489 22.275945)
 				(xy 160.961041 22.163267) (xy 160.96103 22.163264) (xy 160.580364 22.087547) (xy 160.580347 22.087544)
 				(xy 160.288239 22.058774) (xy 160.194076 22.0495) (xy 159.805924 22.0495) (xy 159.718836 22.058077)
 				(xy 159.419652 22.087544) (xy 159.419635 22.087547) (xy 159.038969 22.163264) (xy 159.038958 22.163267)
