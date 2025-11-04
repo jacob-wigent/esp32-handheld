@@ -114092,6 +114092,7 @@
 			(net 53 "VDD")
 			(pinfunction "Pin_1")
 			(pintype "passive")
+			(thermal_bridge_width 1)
 			(uuid "9eb170c2-327a-4253-a40e-72a578f3deeb")
 		)
 		(pad "2" thru_hole circle
@@ -114103,6 +114104,7 @@
 			(net 2 "GND")
 			(pinfunction "Pin_2")
 			(pintype "passive")
+			(thermal_bridge_width 1)
 			(uuid "df3fd831-6f8e-4ec7-9088-86490658b694")
 		)
 		(embedded_fonts no)
@@ -141470,7 +141472,7 @@
 		(filled_areas_thickness no)
 		(fill yes
 			(thermal_gap 0.5)
-			(thermal_bridge_width 1)
+			(thermal_bridge_width 0.5)
 		)
 		(polygon
 			(pts
@@ -146966,7 +146968,7 @@
 		(filled_areas_thickness no)
 		(fill yes
 			(thermal_gap 0.5)
-			(thermal_bridge_width 1)
+			(thermal_bridge_width 0.5)
 		)
 		(polygon
 			(pts
