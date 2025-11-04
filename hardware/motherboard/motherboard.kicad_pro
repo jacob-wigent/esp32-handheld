@@ -648,7 +648,8 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "esp32_handheld"
+      "esp32_handheld",
+      "esp32_graphics"
     ],
     "pinned_symbol_libs": [
       "esp32_handheld"
