@@ -17,25 +17,33 @@
 #define SCL         (9)
 
 // display pins
-#define DIS8        (10)
-#define DIS7        (11)
-#define DIS6        (12)
-#define DIS5        (13)
-#define DIS4        (14)
-#define DIS3        (23)
-#define DIS2        (47)
-#define DIS1        (48)
+#define DISP8        (10)
+#define DISP7        (11)
+#define DISP6        (12)
+#define DISP5        (13)
+#define DISP4        (14)
+#define DISP3        (23)
+#define DISP2        (47)
+#define DISP1        (48)
 
-
+#define StatusLED   (3)
 #define ChgStat     (16)
 
 // GPIO inputs (buttons)
-#define UP          (17)
-#define RIGHT       (18)
-#define DOWN        /// TODO
-#define LEFT        /// TODO
+#define RIGHT       (17)
+#define UP          (18)
+#define DOWN        (36)
+#define LEFT        (35)
 #define A           (39)
 #define B           (40)
 #define X           (41)
 #define Y           (42)
+#define StckBtn     (15)
+// Bumpers
+#define BLeft       (37)
+#define BRight      (38)
 
+// Speaker
+#define Speaker     (45)
+// Motor
+#define Motor       (46)
