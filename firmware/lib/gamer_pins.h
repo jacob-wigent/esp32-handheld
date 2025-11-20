@@ -22,10 +22,11 @@
 #define DISP6        (12)
 #define DISP5        (13)
 #define DISP4        (14)
-#define DISP3        (23)
+#define DISP3        (21)
 #define DISP2        (47)
 #define DISP1        (48)
 
+// Status LEDs
 #define StatusLED   (3)
 #define ChgStat     (16)
 
