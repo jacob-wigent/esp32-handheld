@@ -63,9 +63,14 @@ unsigned long t_snakeStep = 0;
 unsigned long snakeInterval = 200;
 
 // --- Breakout Variables ---
-const int BRICK_ROWS = 3;
+const int BRICK_ROWS = 5;
 bool bricks[BRICK_ROWS][GRID_COLS];
 int paddleCol = 0;
+// Paddle position/velocity (paddleCol remains for rendering/compat)
+float paddleX = 0.0f;
+float paddleVel = 0.0f;
+const float PADDLE_MAX_SPEED = 32.0f; // columns per second
+const int JOY_DEAD = 200; // ADC deadzone around center
 const int PADDLE_WIDTH = 5;
 int ballR = 0, ballC = 0;
 int ballDirR = -1, ballDirC = 1;
@@ -351,20 +356,59 @@ void handleInput() {
 
     else if (currentGame == GAME_BREAKOUT) {
       if (btnStart.pressed()) appState = STATE_MENU;
-      
+
+      // Time delta for movement (seconds)
+      float dt = INPUT_POLL_MS / 1000.0f;
+
       if (joystickPresent) {
         int ax = analogRead(AX);
-        // FIX: Aggressive Mapping
-        // Map 0-4095 to a range WIDER than the board (e.g. -4 to Max+4)
-        // This ensures that even if the joystick only hits 3800, it maps to the max index.
-        int maxIdx = GRID_COLS - PADDLE_WIDTH;
-        int mapped = map(ax, 0, 4095, -4, maxIdx + 4);
-        paddleCol = constrain(mapped, 0, maxIdx);
+        const int MID = 2048;
+        int deflect = ax - MID;
+
+        // Deadzone
+        if (abs(deflect) < JOY_DEAD) deflect = 0;
+
+        // Map deflection (-MID..MID) to velocity (-PADDLE_MAX_SPEED..PADDLE_MAX_SPEED)
+        float norm = (float)deflect / (float)(MID - JOY_DEAD);
+        if (norm > 1.0f) norm = 1.0f;
+        if (norm < -1.0f) norm = -1.0f;
+
+        // Desired velocity from joystick
+        float desiredVel = norm * PADDLE_MAX_SPEED;
+
+        // Simple smoothing towards desired velocity (higher accel = snappier)
+        const float accel = 300.0f; // speed units per second^2
+        float velDiff = desiredVel - paddleVel;
+        float maxDelta = accel * dt;
+        if (velDiff > maxDelta) velDiff = maxDelta;
+        if (velDiff < -maxDelta) velDiff = -maxDelta;
+        paddleVel += velDiff;
       } else {
-        if (l) paddleCol--;
-        if (r) paddleCol++;
-        paddleCol = constrain(paddleCol, 0, GRID_COLS - PADDLE_WIDTH);
+        // Buttons: simple fixed velocity per press
+        if (l) paddleVel = -PADDLE_MAX_SPEED * 0.9f;
+        else if (r) paddleVel = PADDLE_MAX_SPEED * 0.9f;
+        else {
+          // apply damping to slow to zero
+          paddleVel *= 0.5f;
+          if (fabs(paddleVel) < 0.01f) paddleVel = 0.0f;
+        }
       }
+
+      // friction / damping when joystick centered
+      if (joystickPresent) {
+        // small damping to prevent endless drift (reduced for snappier feel)
+        paddleVel *= 0.995f;
+        if (fabs(paddleVel) < 0.01f) paddleVel = 0.0f;
+      }
+
+      // Update position
+      paddleX += paddleVel * dt;
+
+      // Constrain and sync integer paddleCol for rendering/collision
+      int maxIdx = GRID_COLS - PADDLE_WIDTH;
+      if (paddleX < 0) { paddleX = 0; paddleVel = 0; }
+      if (paddleX > maxIdx) { paddleX = maxIdx; paddleVel = 0; }
+      paddleCol = constrain((int)roundf(paddleX), 0, maxIdx);
     }
 
     else if (currentGame == GAME_ART) {
@@ -471,6 +515,9 @@ void startBreakout() {
       bricks[r][c] = true;
 
   paddleCol = (GRID_COLS - PADDLE_WIDTH) / 2;
+  // Initialize float position/velocity for velocity-based control
+  paddleX = (GRID_COLS - PADDLE_WIDTH) / 2;
+  paddleVel = 0.0f;
   ballR = GRID_ROWS - 3;
   ballC = GRID_COLS / 2;
   ballDirR = -1; ballDirC = 1;
@@ -492,10 +539,12 @@ void updateBreakout() {
   if (nc >= GRID_COLS) { nc = GRID_COLS - 1; ballDirC = -ballDirC; }
   if (nr < 0) { nr = 0; ballDirR = -ballDirR; }
 
-  if (nr >= GRID_ROWS - 1) {
+  // Paddle moved up one row: detect collision one row earlier
+  if (nr >= GRID_ROWS - 2) {
     if (nc >= paddleCol && nc < paddleCol + PADDLE_WIDTH) {
-      ballDirR = -1; 
-      nr = GRID_ROWS - 2;
+      ballDirR = -1;
+      // place ball one row above the paddle after bounce
+      nr = GRID_ROWS - 3;
       int diff = nc - (paddleCol + PADDLE_WIDTH/2);
       if(diff < 0) ballDirC = -1;
       else if(diff > 0) ballDirC = 1;
@@ -520,7 +569,7 @@ void renderBreakout() {
     for (int c = 0; c < GRID_COLS; ++c)
       if (bricks[r][c]) setPixelXY(r, c, CRGB::Orange);
 
-  int prow = GRID_ROWS - 1;
+  int prow = GRID_ROWS - 2; // paddle raised one row
   for (int i = 0; i < PADDLE_WIDTH; ++i)
     setPixelXY(prow, paddleCol + i, CRGB::Blue);
 
