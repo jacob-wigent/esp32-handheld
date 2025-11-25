@@ -460,4 +460,15 @@
 		(uuid "543fa58d-b8c2-4a8f-917c-f3e2dd2df20c")
 	)
 	(embedded_fonts no)
+	(model "${OPS2_HANDHELD}/esp_32_handheld.3dshapes/TSM7P06CP_ROG.step"
+		(offset
+			(xyz 0 -1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -90)
+		)
+	)
 )
