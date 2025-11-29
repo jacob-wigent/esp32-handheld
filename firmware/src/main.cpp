@@ -341,7 +341,7 @@ void loop() {
   FastLED.setBrightness(globalBrightness);
   FastLED.show();
 
-  if (now - t_battRead > 2000) {
+  if (now - t_battRead > 30000) {
     t_battRead = now;
     readBatteryVoltage();
   }
@@ -823,7 +823,10 @@ float readBatteryVoltage() {
   for (int i = 0; i < NO_OF_SAMPLES; i++) adc_reading += analogRead(ABAT);
   adc_reading /= NO_OF_SAMPLES;
   uint32_t voltage_mv = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
-  return (voltage_mv / 1000.0) * 2.0 + 0.01;
+  float batteryVoltage = (voltage_mv / 1000.0) * 2.0 + 0.01;
+  bool isCharging = (digitalRead(ChgStat) == LOW);
+  Serial.printf("[BATTERY] Raw ADC: %lu | Voltage: %.2f V | Charging: %s\n", adc_reading, batteryVoltage, isCharging ? "Yes" : "No");
+  return batteryVoltage;
 }
 
 // ============= FLAPPY BIRD =============
