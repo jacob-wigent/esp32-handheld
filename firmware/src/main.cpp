@@ -128,6 +128,8 @@ esp_adc_cal_characteristics_t *adc_chars;
 void setPixelXY(int row, int col, const CRGB &c);
 void clearGrid();
 float readBatteryVoltage();
+uint32_t readAnalogMilliVoltsAvg(uint8_t pin, int samples = 16);
+const char *classifyCCAdvertised(float cc_voltage_v);
 void startNewGame();
 void startBreakout();
 void startArt();
@@ -341,9 +343,47 @@ void loop() {
   FastLED.setBrightness(globalBrightness);
   FastLED.show();
 
-  if (now - t_battRead > 30000) {
+  if (now - t_battRead > 10000) {
     t_battRead = now;
-    readBatteryVoltage();
+
+    // Battery reading
+    int raw_adc = 0;
+    for (int i = 0; i < 8; ++i) raw_adc += analogRead(ABAT);
+    raw_adc /= 8;
+    float battery_v = readBatteryVoltage();
+
+    // Read CC pins (ACC1/ACC2) — they are through 100k/100k dividers (x2 to get actual)
+    uint32_t cc1_mv = readAnalogMilliVoltsAvg(ACC1, 8);
+    uint32_t cc2_mv = readAnalogMilliVoltsAvg(ACC2, 8);
+    float cc1_v_actual = (cc1_mv / 1000.0f) * 2.0f;
+    float cc2_v_actual = (cc2_mv / 1000.0f) * 2.0f;
+
+    // Choose active CC line (the higher voltage is the active orientation). Require a small threshold.
+    float active_cc_v = 0.0f;
+    const char *active_pin = "none";
+    if (cc1_v_actual > cc2_v_actual + 0.02f && cc1_v_actual > 0.05f) { active_cc_v = cc1_v_actual; active_pin = "ACC1"; }
+    else if (cc2_v_actual > cc1_v_actual + 0.02f && cc2_v_actual > 0.05f) { active_cc_v = cc2_v_actual; active_pin = "ACC2"; }
+    else {
+      // If nearly equal but non-zero, pick the larger
+      if (cc1_v_actual >= cc2_v_actual && cc1_v_actual > 0.05f) { active_cc_v = cc1_v_actual; active_pin = "ACC1"; }
+      else if (cc2_v_actual > 0.05f) { active_cc_v = cc2_v_actual; active_pin = "ACC2"; }
+    }
+
+    const char *advert = classifyCCAdvertised(active_cc_v);
+
+    // Print diagnostics
+    Serial.println("-------------------------------");
+    Serial.print("Raw Battery ADC: "); Serial.println(raw_adc);
+    Serial.print("Battery Voltage: "); Serial.print(battery_v, 3); Serial.println(" V");
+
+    Serial.print("CC1 pin raw mV (measured on pin): "); Serial.print(cc1_mv); Serial.print(" mV");
+    Serial.print("  actual CC1 V: "); Serial.print(cc1_v_actual, 3); Serial.println(" V");
+
+    Serial.print("CC2 pin raw mV (measured on pin): "); Serial.print(cc2_mv); Serial.print(" mV");
+    Serial.print("  actual CC2 V: "); Serial.print(cc2_v_actual, 3); Serial.println(" V");
+
+    Serial.print("Active CC: "); Serial.print(active_pin); Serial.print("  Advertised: "); Serial.println(advert);
+    Serial.println();
   }
 }
 
@@ -827,6 +867,25 @@ float readBatteryVoltage() {
   bool isCharging = (digitalRead(ChgStat) == LOW);
   Serial.printf("[BATTERY] Raw ADC: %lu | Voltage: %.2f V | Charging: %s\n", adc_reading, batteryVoltage, isCharging ? "Yes" : "No");
   return batteryVoltage;
+}
+
+// Read averaged ADC value and convert to millivolts using calibration
+uint32_t readAnalogMilliVoltsAvg(uint8_t pin, int samples) {
+  uint32_t raw = 0;
+  for (int i = 0; i < samples; ++i) raw += analogRead(pin);
+  raw /= samples;
+  uint32_t mv = esp_adc_cal_raw_to_voltage(raw, adc_chars);
+  return mv;
+}
+
+// Classify CC advertised current based on actual CC voltage (not divided)
+const char *classifyCCAdvertised(float cc_voltage_v) {
+  // Ranges/thresholds provided by user; use thresholds to decide
+  if (cc_voltage_v >= 1.31f) return "3A";
+  if (cc_voltage_v >= 1.23f) return "1.5A";
+  if (cc_voltage_v >= 0.66f) return "0.5A";
+  if (cc_voltage_v >= 0.25f) return "Rd/Default";
+  return "None/Unknown";
 }
 
 // ============= FLAPPY BIRD =============
