@@ -19,7 +19,7 @@ void app_main(void)
     display_clear();
     display_set_pixel(0, 0, 25, 0, 0); // Top-left pixel red
     display_set_pixel(19, 0, 0, 25, 0); // Top-right pixel green
-    display_set_pixel(0, 9, 0, 0, 25); // Bottom-left pixel blue 
-    display_set_pixel(19, 9, 12, 12, 0); // Bottom-right pixel yellow
+    display_set_pixel(0, 7, 0, 0, 25); // Bottom-left pixel blue 
+    display_set_pixel(19, 7, 12, 12, 0); // Bottom-right pixel yellow
     display_show();
 }

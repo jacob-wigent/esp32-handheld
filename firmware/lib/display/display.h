@@ -4,8 +4,8 @@
 #include "driver/gpio.h"
 
 #define DISPLAY_WIDTH   20
-#define DISPLAY_HEIGHT  10 //16
-#define NUM_SEGMENTS    5 //8
+#define DISPLAY_HEIGHT  8 //16
+#define NUM_SEGMENTS    4 //8
 #define SEG_HEIGHT      2
 #define SEG_PIXELS      40
 
