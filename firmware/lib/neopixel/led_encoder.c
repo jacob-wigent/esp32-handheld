@@ -5,7 +5,7 @@
  */
 
 #include "esp_check.h"
-#include "encoder.h"
+#include "led_encoder.h"
 
 static const char *TAG = "led_encoder";
 

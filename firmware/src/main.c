@@ -1,30 +1,25 @@
-/**
- * @file example.c
- * @brief Simple neopixel driver example
- */
-
 #include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
-#include "neopixel.h"
 #include "pins.h"
+#include "display.h"
 
-static const char *TAG = "example";
+static const char *TAG = "main";
 
 void app_main(void)
 {
-    // Create two independent strips
-    neopixel_handle_t strip1 = neopixel_create(DISP1, 40);
-    neopixel_handle_t strip2 = neopixel_create(DISP8, 40);
+    ESP_LOGI(TAG, "Starting up...");
 
-    neopixel_clear(strip2);
-    neopixel_show(strip2);
+    if(!display_init((gpio_num_t[]){DISP1, DISP2, DISP3, DISP4})) {
+        ESP_LOGE(TAG, "Failed to initialize display");
+        return;
+    }
 
-    // Set some pixels on strip 1
-    neopixel_set_pixel(strip1, 0, 25, 0, 0);   // Red
-    neopixel_set_pixel(strip1, 1, 0, 25, 0);   // Green
-    neopixel_set_pixel(strip1, 2, 0, 0, 25);   // Blue
-    neopixel_set_pixel(strip1, 3, 0, 0, 25);   // Blue
-    neopixel_show(strip1);
+    display_clear();
+    display_set_pixel(0, 0, 25, 0, 0); // Top-left pixel red
+    display_set_pixel(19, 0, 0, 25, 0); // Top-right pixel green
+    display_set_pixel(0, 9, 0, 0, 25); // Bottom-left pixel blue 
+    display_set_pixel(19, 9, 12, 12, 0); // Bottom-right pixel yellow
+    display_show();
 }

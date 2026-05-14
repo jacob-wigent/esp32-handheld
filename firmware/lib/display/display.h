@@ -1,10 +1,17 @@
-// #pragma once
-// #include <stdint.h>
-// #include <stdbool.h>
+#pragma once
+#include <stdint.h>
+#include <stdbool.h>
+#include "driver/gpio.h"
 
-// bool display_init();
+#define DISPLAY_WIDTH   20
+#define DISPLAY_HEIGHT  10 //16
+#define NUM_SEGMENTS    5 //8
+#define SEG_HEIGHT      2
+#define SEG_PIXELS      40
 
-// void display_set_pixel(uint8_t x, uint8_t y, uint32_t rgb);
-// void display_clear(uint32_t rgb);
+bool display_init(gpio_num_t gpios[NUM_SEGMENTS]);
+
+void display_set_pixel(uint8_t x, uint8_t y, uint8_t r, uint8_t g, uint8_t b);
+void display_clear();
  
-// void display_show();
+void display_show();
