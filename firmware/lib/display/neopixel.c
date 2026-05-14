@@ -1,129 +1,156 @@
-#include <stdlib.h>
-#include <string.h>
+/**
+ * @file neopixel.c
+ * @brief Simple RMT-based Neopixel driver implementation
+ */
 
+#include "neopixel.h"
+#include "encoder.h"
+#include <string.h>
+#include <stdlib.h>
+#include "esp_log.h"
 #include "driver/rmt_tx.h"
 #include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 
-#include "encoder.h"
-#include "neopixel.h"
+static const char *TAG = "neopixel";
 
-#define RMT_RESOLUTION_HZ 10000000
+#define RMT_RESOLUTION_HZ 10000000  // 10MHz
 
-struct sNeopixelContext {
-    rmt_channel_handle_t chan;
+typedef struct {
+    rmt_channel_handle_t rmt_chan;
     rmt_encoder_handle_t encoder;
-    uint32_t pixels;
-    uint8_t *buf;
-};
+    uint8_t *pixels;
+    uint16_t num_leds;
+} neopixel_strip_t;
 
-static inline void rgb_to_grb(uint32_t rgb, uint8_t *out)
-{
-    out[0] = (rgb >> 8) & 0xFF;
-    out[1] = (rgb >> 16) & 0xFF;
-    out[2] = rgb & 0xFF;
+neopixel_handle_t neopixel_create(gpio_num_t gpio, uint16_t num_leds) {
+    if (num_leds == 0) {
+        ESP_LOGE(TAG, "num_leds must be > 0");
+        return NULL;
+    }
+    
+    neopixel_strip_t *strip = calloc(1, sizeof(neopixel_strip_t));
+    if (!strip) {
+        ESP_LOGE(TAG, "Failed to allocate strip");
+        return NULL;
+    }
+    
+    strip->num_leds = num_leds;
+    strip->pixels = calloc(num_leds * 3, 1);
+    if (!strip->pixels) {
+        ESP_LOGE(TAG, "Failed to allocate pixel buffer");
+        free(strip);
+        return NULL;
+    }
+    
+    // Create RMT TX channel
+    rmt_tx_channel_config_t tx_config = {
+        .clk_src = RMT_CLK_SRC_DEFAULT,
+        .gpio_num = gpio,
+        .mem_block_symbols = 64,
+        .resolution_hz = RMT_RESOLUTION_HZ,
+        .trans_queue_depth = 4,
+    };
+    
+    if (rmt_new_tx_channel(&tx_config, &strip->rmt_chan) != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to create RMT channel");
+        free(strip->pixels);
+        free(strip);
+        return NULL;
+    }
+    
+    // Create LED encoder
+    led_strip_encoder_config_t encoder_config = {
+        .resolution = RMT_RESOLUTION_HZ,
+    };
+    
+    if (rmt_new_led_strip_encoder(&encoder_config, &strip->encoder) != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to create encoder");
+        rmt_del_channel(strip->rmt_chan);
+        free(strip->pixels);
+        free(strip);
+        return NULL;
+    }
+    
+    // Enable channel
+    if (rmt_enable(strip->rmt_chan) != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to enable RMT channel");
+        rmt_del_encoder(strip->encoder);
+        rmt_del_channel(strip->rmt_chan);
+        free(strip->pixels);
+        free(strip);
+        return NULL;
+    }
+    
+    ESP_LOGI(TAG, "Created strip: %d LEDs on GPIO %d", num_leds, gpio);
+    return (neopixel_handle_t)strip;
 }
 
-tNeopixelContext *neopixel_Init(uint32_t pixels, int dout_pin)
-{
-    tNeopixelContext *ctx;
-    rmt_tx_channel_config_t tx_cfg;
-    led_strip_encoder_config_t enc_cfg;
-
-    if (pixels == 0) {
-        return NULL;
-    }
-
-    ctx = calloc(1, sizeof(*ctx));
-    if (!ctx) {
-        return NULL;
-    }
-
-    ctx->pixels = pixels;
-    ctx->buf = calloc(pixels, 3);
-    if (!ctx->buf) {
-        free(ctx);
-        return NULL;
-    }
-
-    tx_cfg.clk_src = RMT_CLK_SRC_DEFAULT;
-    tx_cfg.gpio_num = (gpio_num_t)dout_pin;
-    tx_cfg.mem_block_symbols = 64;
-    tx_cfg.resolution_hz = RMT_RESOLUTION_HZ;
-    tx_cfg.trans_queue_depth = 1;
-    tx_cfg.flags.invert_out = 0;
-    tx_cfg.flags.with_dma = 0;
-    tx_cfg.flags.io_loop_back = 0;
-    tx_cfg.flags.io_od_mode = 0;
-
-    if (rmt_new_tx_channel(&tx_cfg, &ctx->chan) != ESP_OK) {
-        free(ctx->buf);
-        free(ctx);
-        return NULL;
-    }
-
-    enc_cfg.resolution = RMT_RESOLUTION_HZ;
-    if (rmt_new_led_strip_encoder(&enc_cfg, &ctx->encoder) != ESP_OK) {
-        rmt_del_channel(ctx->chan);
-        free(ctx->buf);
-        free(ctx);
-        return NULL;
-    }
-
-    if (rmt_enable(ctx->chan) != ESP_OK) {
-        rmt_del_encoder(ctx->encoder);
-        rmt_del_channel(ctx->chan);
-        free(ctx->buf);
-        free(ctx);
-        return NULL;
-    }
-
-    return ctx;
+void neopixel_delete(neopixel_handle_t handle) {
+    if (!handle) return;
+    
+    neopixel_strip_t *strip = (neopixel_strip_t*)handle;
+    
+    rmt_disable(strip->rmt_chan);
+    rmt_del_encoder(strip->encoder);
+    rmt_del_channel(strip->rmt_chan);
+    free(strip->pixels);
+    free(strip);
 }
 
-void neopixel_Deinit(tNeopixelContext *ctx)
-{
-    if (!ctx) {
-        return;
-    }
-
-    rmt_disable(ctx->chan);
-    rmt_del_encoder(ctx->encoder);
-    rmt_del_channel(ctx->chan);
-    free(ctx->buf);
-    free(ctx);
+void neopixel_set_pixel(neopixel_handle_t handle, uint16_t index, 
+                       uint8_t r, uint8_t g, uint8_t b) {
+    if (!handle) return;
+    
+    neopixel_strip_t *strip = (neopixel_strip_t*)handle;
+    
+    if (index >= strip->num_leds) return;
+    
+    // WS2812B uses GRB format
+    uint16_t offset = index * 3;
+    strip->pixels[offset + 0] = g;
+    strip->pixels[offset + 1] = r;
+    strip->pixels[offset + 2] = b;
 }
 
-bool neopixel_SetPixel(tNeopixelContext *ctx, tNeopixel *pixel, uint32_t pixelCount)
-{
-    uint32_t i;
-    rmt_transmit_config_t tx_cfg = {
+uint8_t* neopixel_get_buffer(neopixel_handle_t handle) {
+    if (!handle) return NULL;
+    
+    neopixel_strip_t *strip = (neopixel_strip_t*)handle;
+    return strip->pixels;
+}
+
+uint16_t neopixel_get_length(neopixel_handle_t handle) {
+    if (!handle) return 0;
+    
+    neopixel_strip_t *strip = (neopixel_strip_t*)handle;
+    return strip->num_leds;
+}
+
+esp_err_t neopixel_show(neopixel_handle_t handle) {
+    if (!handle) return ESP_ERR_INVALID_ARG;
+    
+    neopixel_strip_t *strip = (neopixel_strip_t*)handle;
+    
+    rmt_transmit_config_t tx_config = {
         .loop_count = 0,
     };
-
-    if (!ctx || !pixel) {
-        return false;
-    }
-
-    for (i = 0; i < pixelCount; ++i) {
-        uint32_t idx = pixel[i].index;
-        if (idx >= ctx->pixels) {
-            continue;
-        }
-        rgb_to_grb(pixel[i].rgb, &ctx->buf[idx * 3]);
-    }
-
-    if (rmt_transmit(ctx->chan, ctx->encoder, ctx->buf, ctx->pixels * 3, &tx_cfg) != ESP_OK) {
-        return false;
-    }
-
-    return rmt_tx_wait_all_done(ctx->chan, portMAX_DELAY) == ESP_OK;
+    
+    return rmt_transmit(strip->rmt_chan, strip->encoder, 
+                       strip->pixels, strip->num_leds * 3, &tx_config);
 }
 
-uint32_t neopixel_GetRefreshRate(tNeopixelContext *ctx)
-{
-    if (!ctx || ctx->pixels == 0) {
-        return 0;
-    }
+esp_err_t neopixel_wait(neopixel_handle_t handle) {
+    if (!handle) return ESP_ERR_INVALID_ARG;
+    
+    neopixel_strip_t *strip = (neopixel_strip_t*)handle;
+    
+    return rmt_tx_wait_all_done(strip->rmt_chan, portMAX_DELAY);
+}
 
-    return 800000UL / (24UL * ctx->pixels);
+void neopixel_clear(neopixel_handle_t handle) {
+    if (!handle) return;
+    
+    neopixel_strip_t *strip = (neopixel_strip_t*)handle;
+    memset(strip->pixels, 0, strip->num_leds * 3);
 }
